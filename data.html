@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data engine — one pod dataset, eight sectors | JEBI Trust</title>
+<meta name="description" content="How primary data generated inside an aeroponic coffee pod becomes the input for eight sectors — franchise, roasting, carbon, receipt finance, marketplace, equipment, REITs and AI — and how each sector hands back the fact that makes the next cycle cheaper.">
+<meta property="og:title" content="Data engine — one pod dataset, eight sectors">
+<meta property="og:description" content="Coffee's only primary dataset is grown, not collected. Nine million readings per pod cycle, one join, eight converters.">
+<meta property="og:image" content="assets/img/logo.svg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="data.html">
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">JEBI Trust · <span class="en">Data engine</span><span class="zh">数据底座</span></span>
+    <h1>
+      <span class="en">Every price in this chain begins with a reading taken inside a <em>pod</em>.</span>
+      <span class="zh">这条链上的每一个价格，都始于种植舱里的一次<em>读数</em>。</span>
+    </h1>
+    <p class="lead">
+      <span class="en">In conventional coffee the first record is written after harvest, by an interested party, from memory. An aeroponic pod cannot be operated without producing data: the environment is machine-mediated, so roughly 9.3 million readings per cycle arrive as exhaust rather than as a report. Join them to an independent cup score and you hold the only primary dataset in coffee that nobody had to be asked for.</span>
+      <span class="zh">传统咖啡的第一条记录，是在采收之后、由利益相关方、凭记忆写下的。雾化种植舱无法在“不产生数据”的状态下运行：环境由机器中介，所以每个周期约 930 万次读数属于运行废气，而不是一份上报材料。再把它与独立杯测分对接，你就握有咖啡行业唯一一份“不需要征求任何人同意”就能得到的原始数据集。</span>
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#fanout"><span class="en">One dataset, eight sectors</span><span class="zh">一个数据集，八个板块</span><span class="ar">→</span></a>
+      <a class="btn" href="#loops"><span class="en">The four compounding loops</span><span class="zh">四个复利回路</span><span class="ar">→</span></a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="n">9.3<em>M</em></div><div class="k"><span class="en">readings per pod cycle</span><span class="zh">次读数 / 每舱每周期</span></div></div>
+      <div class="stat"><div class="n">8</div><div class="k"><span class="en">sectors fed by one dataset</span><span class="zh">个板块共用同一数据集</span></div></div>
+      <div class="stat"><div class="n">4</div><div class="k"><span class="en">compounding loops, each with a kill switch</span><span class="zh">个复利回路，各有熔断条件</span></div></div>
+      <div class="stat"><div class="n">0</div><div class="k"><span class="en">marginal cost of the second use</span><span class="zh">第二次复用的边际成本</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 INSTRUMENT ============ -->
+<section class="sec" id="instrument">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">01 / <span class="en">The instrument</span><span class="zh">采集层</span></span>
+      <h2><span class="en">The pod measures before anyone has a reason to lie</span><span class="zh">种植舱在人产生撒谎动机之前，就已经测完了</span></h2>
+      <p><span class="en">A farm reports weight and grade at the end of a season, to a buyer it wants to impress. A pod reports temperature, VPD, EC, dissolved oxygen and line pressure every ten seconds, whether or not anyone wants to know. Six channel groups, one identity, one clock.</span>
+      <span class="zh">农场在季末向它想讨好的买方上报重量与等级。种植舱则每十秒上报温度、VPD、EC、溶氧与管路压力——无论有没有人想看。六组通道、一个身份、一只时钟。</span></p>
+    </div>
+
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr>
+          <th><span class="en">Channel group</span><span class="zh">通道组</span></th>
+          <th><span class="en">Sampled</span><span class="zh">采样</span></th>
+          <th><span class="en">What it establishes</span><span class="zh">它确立了什么事实</span></th>
+          <th><span class="en">Consumed by</span><span class="zh">谁在用</span></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="en">Canopy climate</span><span class="zh">冠层气候</span><br><span class="mono small">T · RH · VPD · CO₂ · PPFD · DLI</span></td>
+            <td class="mono">10 s</td>
+            <td><span class="en">Driving force of photosynthesis → a yield distribution, not a yield guess</span><span class="zh">光合驱动力 → 得到产量分布，而不是一个猜测的产量</span></td>
+            <td><span class="en">Franchise underwriting, lender, model</span><span class="zh">加盟准入、放款、模型</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Root zone</span><span class="zh">根区</span><br><span class="mono small">EC · pH · water T · DO · mist duty · pressure</span></td>
+            <td class="mono">10 s</td>
+            <td><span class="en">Root health → the variable that actually decides lot consistency</span><span class="zh">根系状态 → 真正决定批次一致性的变量</span></td>
+            <td><span class="en">Roasting, quality, inspection</span><span class="zh">烘焙、品质、质检</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Plant response</span><span class="zh">植株响应</span><br><span class="mono small">canopy image · leaf temp · growth rate</span></td>
+            <td class="mono"><span class="en">1 / day</span><span class="zh">每日</span></td>
+            <td><span class="en">Actual growth, not scheduled growth → the harvest window</span><span class="zh">真实长势而非排程长势 → 采收窗口</span></td>
+            <td><span class="en">Receipt, forward finance</span><span class="zh">仓单、前瞻融资</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Inputs</span><span class="zh">投入</span><br><span class="mono small">water L · nutrient g · kWh · labour min</span></td>
+            <td class="mono"><span class="en">per event</span><span class="zh">每次事件</span></td>
+            <td><span class="en">Cost per kilo and emissions per kilo, measured rather than modelled</span><span class="zh">每公斤成本与每公斤排放：实测，而非建模</span></td>
+            <td><span class="en">Carbon MRV, REIT valuation</span><span class="zh">碳核查、REITs 估值</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Output</span><span class="zh">产出</span><br><span class="mono small">cherry g · cherry:green · cup score · defects</span></td>
+            <td class="mono"><span class="en">per batch</span><span class="zh">每批次</span></td>
+            <td><span class="en">The outcome label that makes every reading above meaningful</span><span class="zh">让上面所有读数变得有意义的结果标签</span></td>
+            <td><span class="en">Marketplace pricing, receipt grade</span><span class="zh">商城定价、仓单等级</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Lineage</span><span class="zh">血缘</span><br><span class="mono small">pod ID · cycle ID · harvest ID · operator</span></td>
+            <td class="mono"><span class="en">per event</span><span class="zh">每次事件</span></td>
+            <td><span class="en">Whose it is → the batch code that check 01 of admission tests</span><span class="zh">归属 → 准入第 01 项检验所验证的批次码</span></td>
+            <td><span class="en">Registry, auditor, insurer</span><span class="zh">登记处、审计、保险</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="contrast" style="margin-top:26px">
+      <div class="cbox">
+        <div class="n">9.3M</div>
+        <div class="k"><span class="en">machine readings in one 90-day pod cycle — 12 channels at 10-second intervals. Produced by the act of growing, not by an audit.</span>
+        <span class="zh">一个 90 天舱周期的机器读数——12 个通道、10 秒一次。它是“种植”这个动作的产物，不是审计的产物。</span></div>
+      </div>
+      <div class="cvs"><span>VS</span></div>
+      <div class="cbox">
+        <div class="n dim">~40</div>
+        <div class="k"><span class="en">fields on a conventional lot record, typed after harvest, by the party with the strongest interest in the number.</span>
+        <span class="zh">传统批次单上的字段数，采收后录入，录入方是数字对自己最有利的那一方。</span></div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:24px">
+      <p><span class="en"><b>The cost difference is structural, not technical.</b> Conventional MRV is expensive because it is a reconstruction: someone must go back and rebuild what happened. Pod data is cheap because it was never a report — it is the control loop's own exhaust. Controlling the environment and recording it are the same act, so the second one is free.</span>
+      <span class="zh"><b>成本差别是结构性的，不是技术性的。</b>传统 MRV 之所以贵，是因为它是“事后重建”：必须有人回头把发生过的事重新拼一遍。舱数据的便宜，来自它从来不是一份报告——它是控制回路自己的废气。控制环境与记录环境是同一个动作，所以后者免费。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 CONVERSION ============ -->
+<section class="sec" id="conversion">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">02 / <span class="en">Conversion</span><span class="zh">转换</span></span>
+        <h2 style="margin-bottom:16px"><span class="en">Telemetry is weather. Evidence is a reading attached to an outcome.</span><span class="zh">遥测只是天气。证据是读数接上了结果。</span></h2>
+        <p><span class="en">Most data businesses fail at this seam: they sell access to a stream and call it proof. Four rules decide whether a sensor reading may be used to price anything, and they are deliberately boring — boring is what an auditor can repeat.</span>
+        <span class="zh">多数数据生意死在这道缝上：卖的是数据流，却把它叫作证据。以下四条规则决定一条读数是否有资格被用来定价。它们刻意做得很无趣——无趣，才是审计师能重复的东西。</span></p>
+      </div>
+      <div class="rules">
+        <div class="rule"><span class="i">R1</span><div><b><span class="en">Calibrated</span><span class="zh">已校准</span></b><span><span class="en">Every channel carries a calibration certificate with an expiry date. An out-of-calibration channel is excluded from the evidence set, never interpolated to fill the gap.</span><span class="zh">每个通道都带校准证书与到期日。超出校准期的通道从证据集中剔除，绝不用插值把缺口补上。</span></span></div></div>
+        <div class="rule"><span class="i">R2</span><div><b><span class="en">Paired</span><span class="zh">已配对</span></b><span><span class="en">A reading becomes evidence only when joined to an independent outcome: cup score, weighed yield, lab assay. Unpaired telemetry is a log file.</span><span class="zh">读数只有在接上独立结果后才成为证据：杯测分、称重产量、化验。未配对的遥测只是一个日志文件。</span></span></div></div>
+        <div class="rule"><span class="i">R3</span><div><b><span class="en">Complete</span><span class="zh">已完整</span></b><span><span class="en">A failed batch is recorded at the same resolution as a good one. A deletion is itself an event, and it is published as one.</span><span class="zh">失败批次与成功批次按同等粒度记录。删除本身也是一条事件，并且要作为事件披露。</span></span></div></div>
+        <div class="rule"><span class="i">R4</span><div><b><span class="en">Versioned</span><span class="zh">已版本化</span></b><span><span class="en">Signed at the edge, hashed, daily digest notarised. A correction is a new record that cites the old one — never an overwrite.</span><span class="zh">边缘签名、哈希、每日摘要公证。更正是引用旧记录的新记录——永远不是覆盖。</span></span></div></div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div class="sec-head" style="margin-bottom:22px">
+      <h2 style="font-size:22px"><span class="en">Five grades, one direction</span><span class="zh">五个等级，只能向上</span></h2>
+      <p class="small"><span class="en">A token never upgrades the evidence beneath it. A gap at grade 3 is fatal at grade 5, and no amount of legal wrapper hides it.</span>
+      <span class="zh">通证不会让它下面的证据升级。第 3 级的缺口在第 5 级是致命的，再厚的法律外壳也盖不住。</span></p>
+    </div>
+    <div class="ladder">
+      <div class="lg g1"><div class="st">01 / SIGNAL</div><div class="nm"><span class="en">Signal</span><span class="zh">信号</span></div><div class="ds"><span class="en">A raw reading. True if the sensor is online. Consumed by operations.</span><span class="zh">原始读数。传感器在线即为真。使用者：运营。</span></div></div>
+      <div class="lg g2"><div class="st">02 / RECORD</div><div class="nm"><span class="en">Record</span><span class="zh">记录</span></div><div class="ds"><span class="en">Batch-scoped series plus operator sign-off. True if identity is bound.</span><span class="zh">批次范围内的序列 + 操作员签字。身份绑定即为真。</span></div></div>
+      <div class="lg g3"><div class="st">03 / EVIDENCE</div><div class="nm"><span class="en">Evidence</span><span class="zh">证据</span></div><div class="ds"><span class="en">Paired with an independent outcome, calibration current. Consumed by lender and verifier.</span><span class="zh">接上独立结果、校准在有效期。使用者：放款人与核查方。</span></div></div>
+      <div class="lg g4"><div class="st">04 / ASSET</div><div class="nm"><span class="en">Asset</span><span class="zh">资产</span></div><div class="ds"><span class="en">Exclusive rights, valuation, insurance, custody. All nine checks satisfied.</span><span class="zh">独占权利、估值、保险、托管。九项检验全部满足。</span></div></div>
+      <div class="lg g5"><div class="st">05 / TOKEN</div><div class="nm"><span class="en">Token</span><span class="zh">通证</span></div><div class="ds"><span class="en">A claim on the asset, permitted by a written legal opinion. Last, never first.</span><span class="zh">对资产的索取权，须有书面法律意见允许。永远在最后，不在最前。</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 STACK ============ -->
+<section class="sec" id="stack">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">03 / <span class="en">Architecture</span><span class="zh">结构</span></span>
+      <h2><span class="en">Skip a layer and the layer above becomes a story</span><span class="zh">抽掉任何一层，它上面那层就变成故事</span></h2>
+      <p><span class="en">Read downward: each layer consumes the one above it. Read upward: each layer returns a fact that makes the one above it cheaper to produce. That two-way traffic is the concept — not the coffee, and not the token.</span>
+      <span class="zh">向下读：每一层都在消耗它上面那一层。向上读：每一层都交回一个事实，使上面那一层更便宜地再生产一次。这条双向通路才是概念本身——不是咖啡，也不是通证。</span></p>
+    </div>
+
+    <div class="stack">
+      <div class="slay l0">
+        <div class="lv">L0<br>POD</div>
+        <div>
+          <div class="nm"><span class="en">Primary layer — four primitives</span><span class="zh">原始层——四个基本事实</span></div>
+          <div class="ds"><span class="en">Whose it is, how much, how good, what it cost the planet. Generated by the machine while it grows the crop; the cost of measurement is already inside the cost of production.</span>
+          <span class="zh">是谁的、有多少、有多好、给地球留下多少成本。由机器在种植过程中生成；计量成本已经包含在生产成本里。</span></div>
+        </div>
+        <div class="cost"><b><span class="en">Skip it</span><span class="zh">若抽掉</span></b><span class="en">Every layer above degrades into questionnaires and recollection. You are back in the lemons market with better typography.</span><span class="zh">上面每一层都退化成问卷与回忆。你又回到了柠檬市场，只是排版更好看。</span></div>
+      </div>
+      <div class="sconn"></div>
+
+      <div class="slay">
+        <div class="lv">L1<br>EVIDENCE</div>
+        <div>
+          <div class="nm"><span class="en">Three codes, nine checks</span><span class="zh">三码、九检</span></div>
+          <div class="ds"><span class="en">Batch code binds lineage, asset code binds ownership, token code binds the claim. Nine binary checks decide whether the evidence may be shown to anyone outside.</span>
+          <span class="zh">批次码绑定血缘，资产码绑定权属，通证码绑定索取权。九项“有/无”检验决定这份证据能否给外部看。</span></div>
+        </div>
+        <div class="cost"><b><span class="en">Skip it</span><span class="zh">若抽掉</span></b><span class="en">Assets become narratives and the fraud surface is the entire balance sheet.</span><span class="zh">资产变成叙事，欺诈面等于整张资产负债表。</span></div>
+      </div>
+      <div class="sconn"></div>
+
+      <div class="slay">
+        <div class="lv">L2<br>SECTORS</div>
+        <div>
+          <div class="nm"><span class="en">Eight converters</span><span class="zh">八台转换器</span></div>
+          <div class="ds"><span class="en">Franchise, roasting, carbon, receipt, marketplace, equipment, REIT, AI. Each turns the same four facts into a different product: goods, credit, labels, capacity, recipes, venues.</span>
+          <span class="zh">加盟、烘焙、碳、仓单、商城、设备、REITs、AI。每一台都把同样四个事实变成不同产品：货、信用、标签、产能、配方、场所。</span></div>
+        </div>
+        <div class="cost"><b><span class="en">Skip it</span><span class="zh">若抽掉</span></b><span class="en">No cash flow. You own a database with no revenue attached to it.</span><span class="zh">没有现金流。你拥有一个数据库，但没有任何收入挂在上头。</span></div>
+      </div>
+      <div class="sconn"></div>
+
+      <div class="slay">
+        <div class="lv">L3<br>CAPITAL</div>
+        <div>
+          <div class="nm"><span class="en">Six asset classes</span><span class="zh">六类可定价资产</span></div>
+          <div class="ds"><span class="en">Receipt, carbon removal, equipment, IP royalty, store cash flow, REIT units — sequenced by verifiability per unit of legal risk, not by size or story.</span>
+          <span class="zh">仓单、碳移除、设备、IP 版税、门店现金流、REITs 份额——按“每单位法律风险对应的可验证性”排序，不按规模或故事排序。</span></div>
+        </div>
+        <div class="cost"><b><span class="en">Skip it</span><span class="zh">若抽掉</span></b><span class="en">No exit, no recycling. Expansion is limited to your own cash flow, which is the slowest possible way to build this.</span><span class="zh">没有退出，没有循环。扩张只能靠自有现金流——这是造这件事最慢的方式。</span></div>
+      </div>
+    </div>
+
+    <p class="tbl-note"><span class="en">We operate L0 and L1 directly. L2 and L3 are deliberately someone else's balance sheet: the moment the verifier also owns the asset, none of the evidence above is worth anything.</span>
+    <span class="zh">我们直接经营 L0 与 L1。L2 与 L3 刻意放在别人的资产负债表上：一旦核查方同时拥有资产，上面所有证据就一文不值。</span></p>
+  </div>
+</section>
+
+<!-- ============ 04 FAN-OUT ============ -->
+<section class="sec" id="fanout">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">04 / <span class="en">Fan-out</span><span class="zh">分叉</span></span>
+      <h2><span class="en">One dataset, eight converters</span><span class="zh">一个数据集，八台转换器</span></h2>
+      <p><span class="en">No sector needs a new dataset. It needs a different join of the same four primitives. That is why the eighth sector costs almost nothing to serve, and why the first one costs almost everything to build.</span>
+      <span class="zh">没有哪个板块需要一份新数据集。它只需要把同样四个基本事实换一种连接方式。所以服务第八个板块几乎不花钱，而建第一个板块几乎花掉全部。</span></p>
+    </div>
+
+    <div class="fan">
+      <div class="fan-src">
+        <div class="t">SOURCE / L0</div>
+        <div class="h"><span class="en">Pod dataset</span><span class="zh">种植舱数据集</span></div>
+        <div class="d"><span class="en">Identity · quantity · quality · impact. One batch, four labels, one clock.</span><span class="zh">身份 · 数量 · 品质 · 影响。一个批次、四个标签、一只时钟。</span></div>
+      </div>
+      <div class="fan-grid">
+        <div class="fcell"><div class="h"><span class="en">Franchise</span><span class="zh">加盟与连锁</span></div><div class="t"><span class="en">Takes: yield distribution + setpoint recipe → Returns: store cash collection</span><span class="zh">取：产量分布 + 设定点配方 → 回：门店回款</span></div></div>
+        <div class="fcell"><div class="h"><span class="en">Roasting &amp; IP</span><span class="zh">烘焙与配方 IP</span></div><div class="t"><span class="en">Takes: green-bean profile + history → Returns: independent cup score</span><span class="zh">取：生豆档案 + 历史 → 回：独立杯测分</span></div></div>
+        <div class="fcell"><div class="h"><span class="en">Carbon &amp; MRV</span><span class="zh">碳标签与 MRV</span></div><div class="t"><span class="en">Takes: measured inputs and outputs → Returns: emission factor</span><span class="zh">取：实测投入产出 → 回：排放因子</span></div></div>
+        <div class="fcell"><div class="h"><span class="en">Receipt &amp; pledge</span><span class="zh">仓单与质押</span></div><div class="t"><span class="en">Takes: forecast + grade → Returns: repayment record</span><span class="zh">取：产量预测 + 等级 → 回：还款记录</span></div></div>
+        <div class="fcell"><div class="h"><span class="en">Marketplace</span><span class="zh">商城与定价</span></div><div class="t"><span class="en">Takes: grade + batch → Returns: realised transaction price</span><span class="zh">取：等级 + 批次 → 回：真实成交价</span></div></div>
+        <div class="fcell"><div class="h"><span class="en">Equipment RWA</span><span class="zh">设备 RWA</span></div><div class="t"><span class="en">Takes: utilisation + maintenance → Returns: lease receivable</span><span class="zh">取：利用率 + 维护 → 回：租赁应收</span></div></div>
+        <div class="fcell"><div class="h"><span class="en">REIT &amp; valuation</span><span class="zh">REITs 与估值</span></div><div class="t"><span class="en">Takes: three years of measured opex → Returns: quarterly disclosure</span><span class="zh">取：三年实测运营 → 回：季度披露</span></div></div>
+        <div class="fcell"><div class="h"><span class="en">AI &amp; forecasting</span><span class="zh">AI 与预测</span></div><div class="t"><span class="en">Takes: paired corpus → Returns: forecast + anomaly alert</span><span class="zh">取：配对语料 → 回：预测与异常告警</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 MUTUAL ============ -->
+<section class="sec" id="mutual">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">05 / <span class="en">Mutual empowerment</span><span class="zh">互相赋能</span></span>
+      <h2><span class="en">Empowerment is a return path, not a subsidy</span><span class="zh">赋能是一条回路，不是一笔补贴</span></h2>
+      <p><span class="en">A sector belongs in the system only if it produces a fact the other sectors can underwrite. Everything in the third column is a fact with a name, an issuer and a date — not a synergy.</span>
+      <span class="zh">一个板块要进入这个系统，只有一个条件：它必须产出一个别的板块敢用来定价的事实。下表中第三列的每一项，都是有名称、有出具方、有待日期的事实——不是“协同效应”。</span></p>
+    </div>
+
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr>
+          <th><span class="en">Sector</span><span class="zh">板块</span></th>
+          <th><span class="en">Hands back to the loop</span><span class="zh">交回回路的事实</span></th>
+          <th><span class="en">Unlocks</span><span class="zh">由此解锁</span></th>
+          <th><span class="en">Replaces</span><span class="zh">替代了什么</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><td><span class="en">Franchise &amp; chain</span><span class="zh">加盟与连锁</span></td>
+            <td><span class="en">Operating baseline + POS collection per store</span><span class="zh">单店运营基线 + POS 回款</span></td>
+            <td><span class="en">Receipt finance, REITs</span><span class="zh">仓单融资、REITs</span></td>
+            <td><span class="en">The single-store model printed in a brochure</span><span class="zh">招商手册里的单店模型</span></td></tr>
+          <tr><td><span class="en">Roasting &amp; recipe IP</span><span class="zh">烘焙与配方 IP</span></td>
+            <td><span class="en">Independent cup score + curve reproducibility rate</span><span class="zh">独立杯测分 + 曲线复现率</span></td>
+            <td><span class="en">Marketplace pricing, pledge ratio</span><span class="zh">商城定价、仓单质押率</span></td>
+            <td><span class="en">Quality as described by the seller</span><span class="zh">卖方自述的品质</span></td></tr>
+          <tr><td><span class="en">Carbon &amp; MRV</span><span class="zh">碳标签与 MRV</span></td>
+            <td><span class="en">Measured kg CO₂e per kg green bean</span><span class="zh">每公斤生豆实测排放</span></td>
+            <td><span class="en">Marketplace premium, REIT asset ESG file</span><span class="zh">商城溢价、REITs 资产 ESG 档案</span></td>
+            <td><span class="en">Industry-average estimates</span><span class="zh">行业均值估算</span></td></tr>
+          <tr><td><span class="en">Receipt &amp; pledge bank</span><span class="zh">仓单与质押银行</span></td>
+            <td><span class="en">Repayment record + realised pledge-ratio curve</span><span class="zh">还款记录 + 实际质押率曲线</span></td>
+            <td><span class="en">Equipment RWA, REIT debt</span><span class="zh">设备 RWA、REITs 债务</span></td>
+            <td><span class="en">Unsecured credit judgement</span><span class="zh">无抵押的信用判断</span></td></tr>
+          <tr><td><span class="en">Marketplace</span><span class="zh">商城</span></td>
+            <td><span class="en">Realised transaction price per grade</span><span class="zh">分等级的真实成交价</span></td>
+            <td><span class="en">REIT valuation, recipe ranking</span><span class="zh">REITs 估值、配方排序</span></td>
+            <td><span class="en">Wholesale indices and quote sheets</span><span class="zh">批发指数与报价单</span></td></tr>
+          <tr><td><span class="en">Equipment RWA</span><span class="zh">设备 RWA</span></td>
+            <td><span class="en">Utilisation hours + maintenance log</span><span class="zh">运行小时 + 维护记录</span></td>
+            <td><span class="en">Receipt finance, REIT capex case</span><span class="zh">仓单融资、REITs 资本开支论证</span></td>
+            <td><span class="en">Manufacturer's claimed capacity</span><span class="zh">设备厂商声称的产能</span></td></tr>
+          <tr><td><span class="en">REIT &amp; valuation</span><span class="zh">REITs 与估值</span></td>
+            <td><span class="en">Quarterly disclosure + a comparable cap rate</span><span class="zh">季度披露 + 可比的资本化率</span></td>
+            <td><span class="en">Cost of capital for every layer</span><span class="zh">全链条的资本成本</span></td>
+            <td><span class="en">Private deals and rumour pricing</span><span class="zh">私募交易与传闻价格</span></td></tr>
+          <tr><td><span class="en">AI &amp; forecasting</span><span class="zh">AI 与预测</span></td>
+            <td><span class="en">Yield distribution + anomaly alert</span><span class="zh">产量分布 + 异常告警</span></td>
+            <td><span class="en">Forward receipts, targeted MRV sampling</span><span class="zh">前瞻仓单、定向碳抽样</span></td>
+            <td><span class="en">An agronomist's memory</span><span class="zh">农艺师的个人经验</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note"><span class="en">Read a row downward and you get a product. Read a column upward and you get the input to somebody else's underwriting. The business exists in the second reading.</span>
+    <span class="zh">横向读一行，得到一个产品；纵向读一列，得到别人做承保时的输入。生意存在于第二种读法里。</span></p>
+  </div>
+</section>
+
+<!-- ============ 06 LOOPS ============ -->
+<section class="sec" id="loops">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">06 / <span class="en">Compounding</span><span class="zh">复利</span></span>
+      <h2><span class="en">Four loops, and the way each one dies</span><span class="zh">四个回路，以及每一个的死法</span></h2>
+      <p><span class="en">A flywheel is a promise. A kill condition is a test. Both are below, and the kill conditions are the ones on the operating dashboard.</span>
+      <span class="zh">飞轮是一句承诺，熔断条件是一次检验。两者都在下面——而挂在运营看板上的是后者。</span></p>
+    </div>
+
+    <div class="loops">
+      <div class="loop">
+        <div class="id">LOOP L1 / CAPACITY</div>
+        <h3><span class="en">Cheaper admission, more pods, better model</span><span class="zh">准入更便宜，舱更多，模型更准</span></h3>
+        <div class="chain">
+          <span><span class="en">pod data</span><span class="zh">舱数据</span></span><i>→</i>
+          <span><span class="en">franchise underwriting</span><span class="zh">加盟承保</span></span><i>→</i>
+          <span><span class="en">lower deposit &amp; finance cost</span><span class="zh">押金与融资成本下降</span></span><i>→</i>
+          <span><span class="en">more pods, more setpoints</span><span class="zh">更多舱、更多设定点</span></span><i>→</i>
+          <span><span class="en">better forecast</span><span class="zh">预测更准</span></span>
+        </div>
+        <div class="kill"><span class="en"><b>Kill:</b> pod count grows faster than paired outcomes. Expansion outrunning evidence is the most common way this company would die politely.</span>
+        <span class="zh"><b>熔断：</b>舱数增长快于配对结果的增长。扩张跑在证据前面，是这类公司最常见的“体面死法”。</span></div>
+      </div>
+
+      <div class="loop">
+        <div class="id">LOOP L2 / QUALITY</div>
+        <h3><span class="en">Standardised input makes the curve transferable</span><span class="zh">标准化投入，让曲线可以被转让</span></h3>
+        <div class="chain">
+          <span><span class="en">controlled input</span><span class="zh">受控投入</span></span><i>→</i>
+          <span><span class="en">curve as an asset</span><span class="zh">曲线成为资产</span></span><i>→</i>
+          <span><span class="en">higher, tighter cup score</span><span class="zh">杯测更高更集中</span></span><i>→</i>
+          <span><span class="en">price premium</span><span class="zh">价格溢价</span></span><i>→</i>
+          <span><span class="en">asset value</span><span class="zh">资产估值上升</span></span>
+        </div>
+        <div class="kill"><span class="en"><b>Kill:</b> cup-score variance widens as pods scale. That means the standardisation was in the brochure, not in the setpoints.</span>
+        <span class="zh"><b>熔断：</b>规模扩大后杯测离散度反而变大。这说明标准化写在宣传册里，没写在设定点里。</span></div>
+      </div>
+
+      <div class="loop">
+        <div class="id">LOOP L3 / COMPLIANCE</div>
+        <h3><span class="en">Measured carbon buys market access</span><span class="zh">实测碳，换来市场准入</span></h3>
+        <div class="chain">
+          <span><span class="en">measured inputs</span><span class="zh">实测投入</span></span><i>→</i>
+          <span><span class="en">carbon label</span><span class="zh">碳标签</span></span><i>→</i>
+          <span><span class="en">export access &amp; premium</span><span class="zh">出口准入与溢价</span></span><i>→</i>
+          <span><span class="en">volume</span><span class="zh">货量</span></span><i>→</i>
+          <span><span class="en">more batches, better factor</span><span class="zh">更多批次、更准因子</span></span>
+        </div>
+        <div class="kill"><span class="en"><b>Kill:</b> the methodology is rejected, or a double-counting finding lands. A label that cannot survive a challenge is worse than no label.</span>
+        <span class="zh"><b>熔断：</b>方法学被否，或出现重复计算认定。经不起质疑的标签，比没有标签更糟。</span></div>
+      </div>
+
+      <div class="loop">
+        <div class="id">LOOP L4 / CAPITAL</div>
+        <h3><span class="en">Verified collateral lowers the cost of everything</span><span class="zh">可核验的抵押品，降低一切成本</span></h3>
+        <div class="chain">
+          <span><span class="en">forward receipt</span><span class="zh">前瞻仓单</span></span><i>→</i>
+          <span><span class="en">lower haircut</span><span class="zh">折价率下降</span></span><i>→</i>
+          <span><span class="en">cheaper capital</span><span class="zh">资本成本下降</span></span><i>→</i>
+          <span><span class="en">capacity</span><span class="zh">产能</span></span><i>→</i>
+          <span><span class="en">more data</span><span class="zh">更多数据</span></span>
+        </div>
+        <div class="kill"><span class="en"><b>Kill:</b> the haircut falls faster than data coverage rises. This is the only loop that can turn without new evidence — a lender can always shave a notch to win a deal.</span>
+        <span class="zh"><b>熔断：</b>折价率下降快于数据覆盖上升。这是唯一一个“不需要新证据也能转”的回路——放款人永远可以为了让单降一档。</span></div>
+      </div>
+    </div>
+
+    <div class="callout bad" style="margin-top:24px">
+      <p><span class="en"><b>The dangerous loop is L4, and it looks like success.</b> Every other loop needs a new fact to turn. L4 only needs a competitor. That is why the haircut is capped by data coverage as a matter of policy, not by what the market is willing to lend — leverage that outruns evidence is how this concept dies with a good quarter on the books.</span>
+      <span class="zh"><b>危险的是 L4，而它看起来像成功。</b>其他三个回路都需要新事实才能转，L4 只需要一个竞争对手。所以折价率在制度上被封顶于“数据覆盖度允许的水平”，而不是市场愿意放的水平——杠杆跑在证据前面，就是这个概念在财报最好看的那一季死掉的方式。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 ASSET ============ -->
+<section class="sec" id="asset">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">07 / <span class="en">The asset</span><span class="zh">资产属性</span></span>
+      <h2><span class="en">Collected once, billed eight times, impossible to backfill</span><span class="zh">采集一次、计费八次、无法补录</span></h2>
+      <p><span class="en">The collection cost is paid by the first use — usually the operator's own quality control. Every use after that is a new billing event against an asset that already exists. This is the only part of the model where margin improves with time rather than with volume.</span>
+      <span class="zh">采集成本由第一次使用付掉——通常就是运营方自己的品控。此后的每一次使用，都是对一件已存在资产的新计费事件。这是整个模型里唯一一处“利润率随时间改善而不是随规模改善”的地方。</span></p>
+    </div>
+
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr>
+          <th><span class="en">Use</span><span class="zh">用途</span></th>
+          <th><span class="en">Consumes</span><span class="zh">消耗什么</span></th>
+          <th><span class="en">Billed as</span><span class="zh">计费口径</span></th>
+          <th><span class="en">Marginal cost</span><span class="zh">边际成本</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><td><span class="en">Site admission</span><span class="zh">站点准入</span></td><td><span class="en">Yield distribution</span><span class="zh">产量分布</span></td><td class="mono"><span class="en">per site assessment</span><span class="zh">每站点评估</span></td><td class="okc">≈ 0</td></tr>
+          <tr><td><span class="en">Curve development</span><span class="zh">曲线开发</span></td><td><span class="en">Green profile + history</span><span class="zh">生豆档案 + 历史</span></td><td class="mono"><span class="en">per SKU / per revision</span><span class="zh">每 SKU / 每次改版</span></td><td class="okc">≈ 0</td></tr>
+          <tr><td><span class="en">Carbon label</span><span class="zh">碳标签</span></td><td><span class="en">Measured inputs</span><span class="zh">实测投入</span></td><td class="mono"><span class="en">per batch + re-verification</span><span class="zh">每批次 + 复验</span></td><td><span class="en">sampling only</span><span class="zh">仅抽样</span></td></tr>
+          <tr><td><span class="en">Receipt pledge</span><span class="zh">仓单质押</span></td><td><span class="en">Forecast + grade</span><span class="zh">预测 + 等级</span></td><td class="mono"><span class="en">bps of financed value</span><span class="zh">融资额基点</span></td><td class="okc">≈ 0</td></tr>
+          <tr><td><span class="en">Marketplace listing</span><span class="zh">商城挂牌</span></td><td><span class="en">Grade + realised price</span><span class="zh">等级 + 成交价</span></td><td class="mono"><span class="en">per SKU · month</span><span class="zh">每 SKU · 月</span></td><td class="okc">≈ 0</td></tr>
+          <tr><td><span class="en">Equipment proof</span><span class="zh">设备证明</span></td><td><span class="en">Utilisation hours</span><span class="zh">运行小时</span></td><td class="mono"><span class="en">per unit · year</span><span class="zh">每台 · 年</span></td><td class="okc">≈ 0</td></tr>
+          <tr><td><span class="en">Model training</span><span class="zh">模型训练</span></td><td><span class="en">Paired corpus</span><span class="zh">配对语料</span></td><td class="mono"><span class="en">internal (not billed)</span><span class="zh">内部（不计费）</span></td><td><span class="en">compute</span><span class="zh">算力</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="hr"></div>
+
+    <div class="split">
+      <div>
+        <h2 style="font-size:22px;margin-bottom:14px"><span class="en">Why it cannot be bought later</span><span class="zh">为什么这份数据以后买不到</span></h2>
+        <p><span class="en">A competitor with more money can buy the same sensors, the same pods and the same software. There are five things money does not shorten.</span>
+        <span class="zh">比你更有钱的对手，可以买同样的传感器、同样的舱、同样的软件。但有五样东西，钱买不到时间上的捷径。</span></p>
+      </div>
+      <div class="rules">
+        <div class="rule"><span class="i">M1</span><div><b><span class="en">Time</span><span class="zh">时间</span></b><span><span class="en">Three years of paired cycles cannot be purchased. Money buys sensors; it does not buy 2026.</span><span class="zh">三年的配对周期买不到。钱能买传感器，买不到 2026 年。</span></span></div></div>
+        <div class="rule"><span class="i">M2</span><div><b><span class="en">Variance</span><span class="zh">方差</span></b><span><span class="en">One setpoint produces a log; the differences between setpoints produce a response surface. Hence reference pods, deliberately run below optimum at a known cost in yield.</span><span class="zh">单一设定点只产生日志；设定点之间的差异才产生响应曲面。所以我们保留参考舱，故意让它们跑在最优值之外，用可计量的产量换可学习的梯度。</span></span></div></div>
+        <div class="rule"><span class="i">M3</span><div><b><span class="en">The join</span><span class="zh">连接</span></b><span><span class="en">One lot carries a yield label, a cup label, a carbon label and a price label. No single sector can build that join alone — which is the argument for owning the seam rather than the sector.</span><span class="zh">同一批次同时带着产量标签、杯测标签、碳标签与价格标签。没有任何单一板块能独立建立这个连接——这就是“拥有接缝，而不是拥有板块”的论证。</span></span></div></div>
+        <div class="rule"><span class="i">M4</span><div><b><span class="en">Negative data</span><span class="zh">负样本</span></b><span><span class="en">Dead batches, low-scoring lots and equipment faults are kept at full resolution. Almost nobody in this industry keeps them, which is exactly why they are the most valuable rows in the table.</span><span class="zh">死批次、低分批次、设备故障，按完整粒度保留。这个行业几乎没人保留这些——所以它们才是表里最贵的行。</span></span></div></div>
+        <div class="rule"><span class="i">M5</span><div><b><span class="en">Custody</span><span class="zh">监管链</span></b><span><span class="en">Edge signing and a notarised daily digest mean a retroactive edit leaves a trace. Not because a chain is magic, but because the alternative is a spreadsheet someone can quietly fix.</span><span class="zh">边缘签名与每日摘要公证，使“事后修改”必然留下痕迹。不是因为链有什么魔力，而是因为替代方案是一张可以被人悄悄改掉的表格。</span></span></div></div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:26px">
+      <p><span class="en"><b>Ownership, stated plainly.</b> The grower owns the raw stream. The platform holds an exclusive licence to use it for models and benchmarks. Model weights and derived indices belong to the platform. Aggregates are published. Operator identity is anonymised in-country, and nothing containing personal data crosses a border outside the applicable PIPL process.</span>
+      <span class="zh"><b>数据权属，说清楚。</b>原始数据归种植方所有；平台取得将其用于模型与基准的独占许可；模型权重与衍生指标归平台；聚合结果公开发布；操作员身份在境内匿名化，任何含个人信息的记录都不在适用 PIPL 流程之外跨境。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 FALSIFIERS ============ -->
+<section class="sec" id="falsifiers">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">08 / <span class="en">Falsifiers</span><span class="zh">证伪</span></span>
+        <h2 style="margin-bottom:16px"><span class="en">Five numbers we would rather publish than discover</span><span class="zh">五个数字，宁可自己公布，也不要被别人发现</span></h2>
+        <p><span class="en">An investor should be able to test this thesis without visiting a farm. Each threshold is measured every cycle; two consecutive breaches pause expansion, and the pause is disclosed.</span>
+        <span class="zh">投资者应该不用下地看农场，也能检验这套论点。每个阈值按周期测量；连续两次越界即暂停扩张，且暂停本身要披露。</span></p>
+      </div>
+      <div class="rules">
+        <div class="rule"><span class="i">K1</span><div><b><span class="en">Cup dispersion</span><span class="zh">杯测离散</span></b><span><span class="en">σ of cup score across pods at identical setpoints &gt; 1.5 points for three cycles. Then "controlled input = controlled cup" is false, and a pod is just a greenhouse.</span><span class="zh">相同设定点下，跨舱杯测标准差连续三个周期 &gt; 1.5 分。那么“受控投入＝受控杯测”不成立，舱体退化为温室。</span></span></div></div>
+        <div class="rule"><span class="i">K2</span><div><b><span class="en">Calibration drift</span><span class="zh">校准漂移</span></b><span><span class="en">More than 5% drift per channel per quarter, or more than two recalibrations per quarter. Then the cost of evidence exceeds the fee it can support.</span><span class="zh">单通道季度漂移 &gt; 5%，或每季重校超过两次。此时证据成本已高于它能支撑的费用。</span></span></div></div>
+        <div class="rule"><span class="i">K3</span><div><b><span class="en">Conversion and cycle</span><span class="zh">转化率与周期</span></b><span><span class="en">Cherry-to-green below 55%, or a cycle longer than 120 days. Then the unit economics cannot carry the capital stack above them.</span><span class="zh">樱桃到生豆转化率低于 55%，或单周期超过 120 天。此时单位经济撑不起上面的资本结构。</span></span></div></div>
+        <div class="rule"><span class="i">K4</span><div><b><span class="en">Pairing coverage</span><span class="zh">配对覆盖</span></b><span><span class="en">Fewer than 30% of batches joined to an independent cup score. Then the dataset is telemetry, not evidence, and no pricing may reference it.</span><span class="zh">能与独立杯测对接的批次低于 30%。此时数据集只是遥测而非证据，任何定价都不得引用它。</span></span></div></div>
+        <div class="rule"><span class="i">K5</span><div><b><span class="en">Leverage ahead of evidence</span><span class="zh">杠杆跑在证据前</span></b><span><span class="en">Haircut falling faster than coverage rising. Loop L4 is then self-reinforcing, and new credit is suspended by policy — not by the next bad quarter.</span><span class="zh">折价率下降快于覆盖率上升。此时 L4 进入自我强化，按制度暂停新增授信——不等下一个糟糕季度来叫停。</span></span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 INVESTOR READ ============ -->
+<section class="sec" id="investor">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">09 / <span class="en">Investor read</span><span class="zh">投资者视角</span></span>
+      <h2><span class="en">Same company, three ways to underwrite it</span><span class="zh">同一家公司，三种承保方式</span></h2>
+      <p><span class="en">Nobody should have to believe all four layers at once. Each lens below has its own evidence, its own metric and its own failure mode — and they are deliberately not correlated.</span>
+      <span class="zh">没有人需要一次性相信全部四层。下面每一种视角都有自己的证据、自己的指标、自己的失效方式——而且它们刻意互不相关。</span></p>
+    </div>
+
+    <div class="g3">
+      <div class="card">
+        <span class="num">LENS 01</span>
+        <h3><span class="en">Infrastructure yield</span><span class="zh">基础设施收益</span></h3>
+        <p><span class="en">You underwrite the pod and the farm as a producing asset, not the data. Demand is existing coffee demand; the output is physical.</span>
+        <span class="zh">你把舱体与农场当作生产性资产来承保，而不是数据。需求是既有的咖啡需求，产出是实物。</span></p>
+        <p class="small" style="margin-top:10px"><b><span class="en">Watch:</span><span class="zh">看：</span></b> <span class="en">capex per tonne, utilisation, electricity price, cycle length.</span><span class="zh">吨产能资本开支、利用率、电价、周期长度。</span></p>
+        <p class="small" style="margin-top:6px"><b><span class="en">Killed by:</span><span class="zh">死于：</span></b> <span class="en">cost per kilo above landed conventional price.</span><span class="zh">每公斤成本高于传统产地到岸价。</span></p>
+      </div>
+      <div class="card acc">
+        <span class="num">LENS 02</span>
+        <h3><span class="en">Data compounding</span><span class="zh">数据复利</span></h3>
+        <p><span class="en">You underwrite the growth of the paired corpus and the fall in forecast error. This is the only lens that improves while nothing is sold.</span>
+        <span class="zh">你承保的是配对语料的增长与预测误差的下降。这是唯一一个“什么都不卖也在变好”的视角。</span></p>
+        <p class="small" style="margin-top:10px"><b><span class="en">Watch:</span><span class="zh">看：</span></b> <span class="en">pairing coverage, share of pods run as reference pods, quarterly model error.</span><span class="zh">配对覆盖率、参考舱占比、模型误差的季度变化。</span></p>
+        <p class="small" style="margin-top:6px"><b><span class="en">Killed by:</span><span class="zh">死于：</span></b> <span class="en">sample volume rising while variance stays flat.</span><span class="zh">样本量上升而方差不变。</span></p>
+      </div>
+      <div class="card">
+        <span class="num">LENS 03</span>
+        <h3><span class="en">Verification toll</span><span class="zh">核查过路费</span></h3>
+        <p><span class="en">You underwrite the count of verified events and the number of times each is reused. Metered, contracted, and independent of both the harvest and the token market.</span>
+        <span class="zh">你承保的是已验证事件的数量，以及每一件被复用的次数。按量计量、以合同锁定，与收成和通证市场都不相关。</span></p>
+        <p class="small" style="margin-top:10px"><b><span class="en">Watch:</span><span class="zh">看：</span></b> <span class="en">VE per site per month, reuse per dataset, retention after year one.</span><span class="zh">每站点每月 VE 数、每数据集复用次数、第二年留存。</span></p>
+        <p class="small" style="margin-top:6px"><b><span class="en">Killed by:</span><span class="zh">死于：</span></b> <span class="en">buyers treating verification as a one-off project instead of a subscription.</span><span class="zh">买方把核查当成一次性项目，而不是订阅。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSE ============ -->
+<section class="sec">
+  <div class="wrap">
+    <p class="serif-quote" style="max-width:920px">
+      <span class="en">A pod is a machine that grows coffee and, as a by-product, produces the only kind of evidence a lender or an investor can price. The coffee pays for the evidence; the evidence lowers the cost of the coffee. That loop is the whole arbitrage.</span>
+      <span class="zh">种植舱是一台生产咖啡的机器，同时以副产品的形式，产出放款人与投资者唯一能定价的那类证据。咖啡为证据买单，证据又降低咖啡的成本。这个回路，就是全部的套利。</span>
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="index.html"><span class="en">Back to the concept</span><span class="zh">回到商业概念</span><span class="ar">→</span></a>
+      <a class="btn" href="assets.html"><span class="en">What may be admitted as an asset</span><span class="zh">哪些资产可以准入</span><span class="ar">→</span></a>
+      <a class="btn" href="trust.html"><span class="en">The nine checks that gate it</span><span class="zh">把关的九项检验</span><span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/chrome.js"></script>
+</body>
+</html>

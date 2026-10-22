@@ -9,6 +9,7 @@ Static multi-language site (EN / 简体中文). No build step — plain HTML + s
 | File | Content |
 |---|---|
 | `index.html` | Thesis: coffee's proof problem, the Verified Event unit, six revenue lines, the nine checks, refusals |
+| `data.html` | Data engine: pod-level primary data → eight sectors, mutual-empowerment matrix, four compounding loops with kill conditions, falsifiers, investor lenses |
 | `structure.html` | Entity map, separation of duties, Trust Charter (9 articles), governance, intercompany contracts |
 | `trust.html` | Admission test in full (9 checks, evidence + fail condition), access tiers, disclosure ledger, post-admission rules |
 | `assets.html` | Asset ladder: receipt → carbon → equipment → IP → cash flow → REIT, plus the "never tokenise" list |

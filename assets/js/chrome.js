@@ -2,6 +2,7 @@
 (function () {
   var NAV = [
     ['index.html',    'Concept',  '商业概念'],
+    ['data.html',     'Data',     '数据底座'],
     ['structure.html','Structure','公司结构'],
     ['trust.html',    'Trust',    '信任机制'],
     ['assets.html',   'Assets',   '资产阶梯'],
@@ -42,6 +43,7 @@
         '</div>' +
         '<div class="foot-col"><h5><span class="en">Model</span><span class="zh">模式</span></h5>' +
           '<a href="index.html"><span class="en">Thesis</span><span class="zh">核心论点</span></a>' +
+          '<a href="data.html"><span class="en">Data engine</span><span class="zh">数据底座</span></a>' +
           '<a href="index.html#revenue"><span class="en">Revenue lines</span><span class="zh">收入线</span></a>' +
           '<a href="assets.html"><span class="en">Asset ladder</span><span class="zh">资产阶梯</span></a>' +
         '</div>' +
