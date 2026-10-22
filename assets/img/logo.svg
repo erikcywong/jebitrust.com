@@ -13,5 +13,5 @@
   <path d="M43 15.5 V48.5" stroke="#1d9bf0" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
   <!-- wordmark: 40px character size -->
   <text x="72" y="45" font-size="40" fill="#e9ecef"
-        font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"><tspan font-weight="700" letter-spacing="-1">JEBI</tspan><tspan font-weight="300" dx="7">TRUST</tspan></text>
+        font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"><tspan font-weight="700" letter-spacing="-1">JEBI</tspan><tspan font-weight="300" dx="7" fill="#1d9bf0">TRUST</tspan></text>
 </svg>
