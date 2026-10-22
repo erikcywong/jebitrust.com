@@ -1,4 +1,4 @@
-/* JEBI Trust — language switch (EN / 中文)
+/* JEBI TRUST — language switch (EN / 中文)
    Usage: <span class="en">…</span><span class="zh">…</span>
    Blocks work too: <div class="en">…</div><div class="zh">…</div>   */
 (function () {

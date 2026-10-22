@@ -1,4 +1,4 @@
-# JEBI Trust — jebitrust.com
+# JEBI TRUST — jebitrust.com
 
 Trust infrastructure for the coffee chain. Three codes (batch · asset · token), one ledger, nine admission checks: all of them, or no token.
 

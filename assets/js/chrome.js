@@ -1,4 +1,4 @@
-/* JEBI Trust — shared chrome (header / footer) */
+/* JEBI TRUST — shared chrome (header / footer) */
 (function () {
   var NAV = [
     ['index.html',    'Concept',  '商业概念'],
@@ -18,8 +18,8 @@
 
     return '' +
       '<header class="site"><div class="bar">' +
-        '<a class="brand" href="index.html" aria-label="JEBI Trust">' +
-          '<img src="assets/img/logo.svg" alt="JEBI Trust" width="264" height="64">' +
+        '<a class="brand" href="index.html" aria-label="JEBI TRUST">' +
+          '<img src="assets/img/logo.svg" alt="JEBI TRUST" width="264" height="64">' +
         '</a>' +
         '<nav class="main" id="nav">' + links + '</nav>' +
         '<div class="tools">' +
@@ -37,7 +37,7 @@
     '<footer class="site"><div class="wrap">' +
       '<div class="foot-top">' +
         '<div class="foot-brand">' +
-          '<img src="assets/img/logo.svg" alt="JEBI Trust">' +
+          '<img src="assets/img/logo.svg" alt="JEBI TRUST">' +
           '<p class="small"><span class="en">Trust infrastructure for the coffee chain. Three codes, one ledger, one admission test.</span>' +
           '<span class="zh">咖啡产业链的信任基础设施。三码一体、一本账、一套准入检验。</span></p>' +
         '</div>' +
@@ -63,7 +63,7 @@
         '<span class="zh"><b>状态说明。</b>本网站为一个尚未启动的商业项目的商业与合规规划框架，不构成法律、税务、会计或投资建议，也不构成在任何司法辖区购买或出售任何证券、基金份额、通证或金融产品的要约、招揽或推荐。所有数字均为设计目标或说明性规格，不是业绩、预测或承诺。文中所述任何 RWA 或 STO 活动，均以（一）相关辖区持牌律师出具的书面法律意见、（二）所需牌照/注册/豁免、（三）合规的 KYC/AML、投资者适当性、信息披露、托管与审计安排为前提。本网站任何内容不得用于规避 REITs、集合投资、吸收存款、特许经营或碳市场相关监管。不承诺任何收益；本金可能全部损失。</span>' +
       '</p>' +
       '<div class="foot-bottom">' +
-        '<span class="small">© 2026 JEBI Trust · <span class="en">Hong Kong, China</span><span class="zh">中国香港</span></span>' +
+        '<span class="small">© 2026 JEBI TRUST · <span class="en">Hong Kong, China</span><span class="zh">中国香港</span></span>' +
         '<span class="small"><span class="en">ALL NINE CHECKS · OR NO LISTING</span><span class="zh">九检全过 · 否则不挂牌</span></span>' +
       '</div>' +
     '</div></footer>';
