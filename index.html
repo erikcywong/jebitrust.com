@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JEBI Trust — Trust infrastructure for the coffee chain</title>
+<meta name="description" content="JEBI Trust is the verification and asset-credibility layer for a coffee chain: three codes (batch, asset, token), one ledger, and a single listing floor — PCX 40.">
+<meta property="og:title" content="JEBI Trust — Trust infrastructure for the coffee chain">
+<meta property="og:description" content="Three codes, one ledger, one floor: PCX 40.">
+<meta property="og:image" content="assets/img/logo.svg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="index.html">
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">JEBI Trust · <span class="en">Trust infrastructure for the coffee chain</span><span class="zh">咖啡产业链的信任基础设施</span></span>
+    <h1>
+      <span class="en">Coffee doesn't have a bean problem.<br>It has a <em>proof</em> problem.</span>
+      <span class="zh">咖啡的问题不在豆子，<br>而在<em>证据</em>。</span>
+    </h1>
+    <p class="lead">
+      <span class="en">Everybody in the chain — the drinker, the franchisee, the lender, the investor — is asked to trust a stranger's claim. JEBI Trust converts those claims into auditable evidence, binds the evidence to three codes, and charges for access to the evidence instead of taking a cut of the coffee.</span>
+      <span class="zh">链条上的每个人——消费者、加盟商、放款人、投资者——都被要求相信一个陌生人的说法。JEBI Trust 把这些说法变成可审计的证据，把证据绑定到三个码上，并对“调用证据”收费，而不是从咖啡里抽成。</span>
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="structure.html"><span class="en">See the company structure</span><span class="zh">查看公司结构</span><span class="ar">→</span></a>
+      <a class="btn" href="pcx.html"><span class="en">How PCX 40 works</span><span class="zh">PCX 40 如何运作</span><span class="ar">→</span></a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="n">3</div><div class="k"><span class="en">codes: batch · asset · token</span><span class="zh">三码：批次 · 资产 · 通证</span></div></div>
+      <div class="stat"><div class="n">40</div><div class="k"><span class="en">PCX listing floor</span><span class="zh">PCX 上链门槛</span></div></div>
+      <div class="stat"><div class="n">5</div><div class="k"><span class="en">dimensions, 20 points each</span><span class="zh">五个维度，各 20 分</span></div></div>
+      <div class="stat"><div class="n">0</div><div class="k"><span class="en">assets listable below the floor</span><span class="zh">低于门槛可上链的资产</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">01 / <span class="en">The problem</span><span class="zh">问题</span></span>
+      <h2><span class="en">Silence is priced as guilt</span><span class="zh">沉默会被定价为有罪</span></h2>
+      <p><span class="en">Akerlof's lemons market, extended one step: in coffee the asymmetry is not only about quality, it is about existence. Does the farm exist, is the receipt real, was the carbon actually removed, will the franchisor still answer the phone in year three? Four buyers, four identical defaults.</span>
+      <span class="zh">阿克洛夫的“柠檬市场”再往前一步：咖啡里的信息不对称不只是品质，而是“是否存在”。农场真的存在吗？仓单是真的吗？碳真的被移除过吗？三年后加盟总部还会接电话吗？四类买方，四种一模一样的默认判断。</span></p>
+    </div>
+
+    <div class="g4">
+      <div class="card">
+        <span class="num">BUYER 01</span>
+        <h3><span class="en">The drinker</span><span class="zh">消费者</span></h3>
+        <p><span class="en">"Unknown roaster = bad cup." Pays a premium only for names already in their head. A better origin cannot enter on merit.</span>
+        <span class="zh">“不认识的烘焙商＝难喝。”只为脑子里已有的名字付溢价。更好的产区无法凭品质进场。</span></p>
+        <div class="tags"><span class="tag bad">price penalty</span></div>
+      </div>
+      <div class="card">
+        <span class="num">BUYER 02</span>
+        <h3><span class="en">The franchisee</span><span class="zh">加盟商</span></h3>
+        <p><span class="en">"Unknown franchisor = my deposit is gone." Demands a buy-back or walks. Good operators stay small.</span>
+        <span class="zh">“不认识的总部＝押金打水漂。”要么要求回购，要么直接走。好品牌长不大。</span></p>
+        <div class="tags"><span class="tag bad">growth ceiling</span></div>
+      </div>
+      <div class="card">
+        <span class="num">BUYER 03</span>
+        <h3><span class="en">The lender</span><span class="zh">放款人</span></h3>
+        <p><span class="en">"Unknown receipt = fake collateral." Discounts to salvage value, or declines. Post-harvest finance stays expensive.</span>
+        <span class="zh">“不认识的仓单＝假抵押。”按残值打折，或者直接拒贷。采收后融资一直很贵。</span></p>
+        <div class="tags"><span class="tag bad">collateral haircut</span></div>
+      </div>
+      <div class="card">
+        <span class="num">BUYER 04</span>
+        <h3><span class="en">The investor</span><span class="zh">投资者</span></h3>
+        <p><span class="en">"Unverified asset = bad asset." Prices every real asset at the worst case. Then calls coffee uninvestable.</span>
+        <span class="zh">“未确权资产＝烂资产。”把所有真实资产按最坏情况定价，然后说咖啡不可投。</span></p>
+        <div class="tags"><span class="tag bad">junk pricing</span></div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+    <p class="serif-quote">
+      <span class="en">Each of these is a pricing penalty, not a moral problem — and every penalty is payable to whoever removes it. That is the business.</span>
+      <span class="zh">这四项都不是道德问题，而是定价惩罚——而每一笔惩罚，都会付给把它消除掉的人。这就是生意。</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ PRODUCT ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">02 / <span class="en">The product</span><span class="zh">产品</span></span>
+        <h2 style="margin-bottom:18px"><span class="en">Trust, sold by the verified event</span><span class="zh">按“已验证事件”出售信任</span></h2>
+        <p style="margin-bottom:16px"><span class="en">We do not sell certainty. Certainty is not for sale. We sell <b>checkable</b> claims.</span>
+        <span class="zh">我们不卖“确定”。确定是买不到的。我们卖的是<b>可核查</b>的说法。</span></p>
+        <p style="margin-bottom:16px"><span class="en">The unit is the <b>Verified Event (VE)</b>: any assertion that changes someone's willingness to pay, lend or invest — carrying an evidence hash, a timestamp, an accountable owner, and a code you can look up.</span>
+        <span class="zh">计价单位是<b>已验证事件（Verified Event, VE）</b>：任何会改变某人支付、放款或投资意愿的断言，携带证据哈希、时间戳、责任主体，以及一个可查询的编号。</span></p>
+        <p><span class="en">A café that cannot show its monthly VE count is a café nobody can underwrite. That is the sales argument, and it does not require anyone to like us.</span>
+        <span class="zh">一家说不出自己每月有多少 VE 的咖啡馆，就是一家没人敢承保的咖啡馆。这就是销售逻辑，而且不需要对方喜欢我们。</span></p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="card acc">
+          <span class="num">CODE 01 / BATCH</span>
+          <h3><span class="en">Batch code</span><span class="zh">批次码</span></h3>
+          <p><span class="en">Pod → green bean → roast → pack → shelf → store. One unbroken lineage per lot, with yield, cup score and sensor trace attached to it.</span>
+          <span class="zh">种植舱 → 生豆 → 烘焙 → 包装 → 货架 → 门店。每一批一条不断裂的血缘，附带产量、杯测分与传感器曲线。</span></p>
+        </div>
+        <div class="card acc">
+          <span class="num">CODE 02 / ASSET</span>
+          <h3><span class="en">Asset code</span><span class="zh">资产码</span></h3>
+          <p><span class="en">Any thing that can be owned and financed: a pod, a warehouse receipt, a tonne of removed carbon, a recipe, a store's cash flow, a REIT unit.</span>
+          <span class="zh">任何可被拥有与融资的标的：舱体、仓单、一吨已移除的碳、一个配方、一家门店的现金流、一份 REITs 份额。</span></p>
+        </div>
+        <div class="card acc">
+          <span class="num">CODE 03 / TOKEN</span>
+          <h3><span class="en">Token code</span><span class="zh">通证码</span></h3>
+          <p><span class="en">A claim on an asset code. It cannot exist on its own: no token without an asset, no asset without batch lineage, no listing below PCX 40.</span>
+          <span class="zh">对某个资产码的索取权。它不能独立存在：无资产不发通证，无批次血缘不算资产，低于 PCX 40 不得上链。</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVENUE ============ -->
+<section class="sec" id="revenue">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">03 / <span class="en">Revenue</span><span class="zh">收入</span></span>
+      <h2><span class="en">Six lines, none of them a coffee margin</span><span class="zh">六条收入线，没有一条来自咖啡差价</span></h2>
+      <p><span class="en">Metered, contracted, and priced off the cost of producing the evidence — never off the size of the asset or the return it might produce.</span>
+      <span class="zh">按量计量、以合同锁定，定价锚定“生产证据的成本”，绝不锚定资产规模或它可能产生的回报。</span></p>
+    </div>
+
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th><span class="en">Revenue line</span><span class="zh">收入线</span></th>
+            <th><span class="en">Metering basis</span><span class="zh">计量口径</span></th>
+            <th><span class="en">Who pays</span><span class="zh">谁付钱</span></th>
+            <th><span class="en">Why it survives a downturn</span><span class="zh">为何抗周期</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="en">Provenance subscription</span><span class="zh">溯源订阅</span></td>
+            <td class="mono"><span class="en">per store / month</span><span class="zh">每店 / 月</span></td>
+            <td><span class="en">Franchisee, roaster, retailer</span><span class="zh">加盟商、烘焙商、零售商</span></td>
+            <td><span class="en">Staying listed is a compliance cost, not a marketing bet</span><span class="zh">“保持挂牌”是合规成本，不是营销预算</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Verification API</span><span class="zh">验证 API</span></td>
+            <td class="mono"><span class="en">per verified event<br>(cost × multiple, floor price)</span><span class="zh">每次已验证事件<br>（成本×倍率，设下限）</span></td>
+            <td><span class="en">Brands, lenders, marketplaces</span><span class="zh">品牌、放款方、交易平台</span></td>
+            <td><span class="en">Usage-based: no capex for the buyer, no ceiling for us</span><span class="zh">按次计费：买方无资本开支，我们无上限</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Custody &amp; receipt administration</span><span class="zh">托管与仓单管理</span></td>
+            <td class="mono"><span class="en">bps of financed value</span><span class="zh">融资额基点</span></td>
+            <td><span class="en">Borrower + lender, split</span><span class="zh">借款方与放款方分摊</span></td>
+            <td><span class="en">Tied to credit demand, not to coffee sentiment</span><span class="zh">绑定信贷需求，不绑定咖啡行情</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Carbon MRV &amp; label issuance</span><span class="zh">碳 MRV 与标签签发</span></td>
+            <td class="mono"><span class="en">per batch + per re-verification</span><span class="zh">每批次 + 每次复验</span></td>
+            <td><span class="en">Roaster, exporter, buyer of record</span><span class="zh">烘焙商、出口商、记录买方</span></td>
+            <td><span class="en">Regulation-driven demand, not consumer mood</span><span class="zh">需求由监管驱动，不由消费情绪驱动</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">Issuance &amp; SPV administration</span><span class="zh">发行与 SPV 管理</span></td>
+            <td class="mono"><span class="en">per vehicle + annual retainer</span><span class="zh">每个载体 + 年度顾问费</span></td>
+            <td><span class="en">Asset owner / arranger</span><span class="zh">资产方 / 安排人</span></td>
+            <td><span class="en">Mandatory once you choose to list; recurring by design</span><span class="zh">一旦选择挂牌即必需；结构上就是经常性收入</span></td>
+          </tr>
+          <tr>
+            <td><span class="en">PCX assessment &amp; surveillance</span><span class="zh">PCX 评估与持续跟踪</span></td>
+            <td class="mono"><span class="en">per assessment + annual surveillance</span><span class="zh">每次评估 + 年度跟踪</span></td>
+            <td><span class="en">Issuer (fixed fee, ring-fenced rater)</span><span class="zh">发行方（固定费，评级主体隔离）</span></td>
+            <td><span class="en">The rating is the product; if it can be bought, it is worthless</span><span class="zh">评级本身即产品；能买到的评级一文不值</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note"><span class="en">Pricing logic follows the JEBI metering convention: charge = ceil(max(production cost × multiple, floor)). No line is priced as a percentage of expected investor return.</span>
+    <span class="zh">定价逻辑沿用 JEBI 计量口径：费用 = ceil(max(证据生产成本 × 倍率, 下限))。没有任何一条收入按预期投资者回报的百分比计价。</span></p>
+  </div>
+</section>
+
+<!-- ============ REFUSALS ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">04 / <span class="en">Refusals</span><span class="zh">拒绝清单</span></span>
+        <h2 style="margin-bottom:16px"><span class="en">A trust business is defined by the money it turns down</span><span class="zh">信任生意的定义，是它拒绝收的钱</span></h2>
+        <p><span class="en">Every trust franchise in history died the same way: it sold the thing it was supposed to certify. These four refusals are written into the group's constitutional documents, not into a policy PDF.</span>
+        <span class="zh">历史上每一个信任机构都以同一种方式死掉：把它本该认证的东西卖掉了。以下四条拒绝，写进集团章程文件，而不是写成一份政策 PDF。</span></p>
+      </div>
+      <div class="rules">
+        <div class="rule"><span class="i">R1</span><div><b><span class="en">No success fees on capital raised</span><span class="zh">不收取融资成功费</span></b><span><span class="en">We are never paid more because more money moved. Placement economics create the incentive to over-issue.</span><span class="zh">募到的钱越多，我们不会赚得越多。承销经济会直接制造超发的动机。</span></span></div></div>
+        <div class="rule"><span class="i">R2</span><div><b><span class="en">No issuer may own its custodian or its rater</span><span class="zh">发行方不得拥有托管方或评级方</span></b><span><span class="en">Structural separation, not a conflict-of-interest policy.</span><span class="zh">结构性隔离，不是一份利益冲突政策。</span></span></div></div>
+        <div class="rule"><span class="i">R3</span><div><b><span class="en">No guaranteed anything</span><span class="zh">不做任何“保证”</span></b><span><span class="en">No principal protection, no fixed yield, no "zero risk", no "absolute carbon neutral". A single such sentence ends the licence and the franchise.</span><span class="zh">不保本、不保固定收益、不说“零风险”、不说“绝对零碳”。一句话就能同时终结牌照与品牌。</span></span></div></div>
+        <div class="rule"><span class="i">R4</span><div><b><span class="en">No selling access to investors</span><span class="zh">不卖“接触投资者”的机会</span></b><span><span class="en">We price evidence. Distribution is licensed, limited, and never auctioned to the highest issuer.</span><span class="zh">我们只对证据定价。分销须持牌、受限，且绝不向出价最高的发行方拍卖。</span></span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PCX TEASER ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">05 / <span class="en">The index</span><span class="zh">指数</span></span>
+      <h2><span class="en">One number everybody can argue with</span><span class="zh">一个所有人都可以质疑的数字</span></h2>
+      <p><span class="en">PCX — Provenance Confidence indeX — scores an asset 0–100 across five dimensions. 40 is the listing floor. Below 40 an asset is not "early stage"; it is unlistable, and saying so is the whole product.</span>
+      <span class="zh">PCX（Provenance Confidence indeX，溯源置信指数）用五个维度给资产打 0–100 分。40 是上链门槛。低于 40 不叫“早期”，叫“不可挂牌”——而敢说出来，才是产品本身。</span></p>
+    </div>
+    <div class="bands">
+      <div class="band red"><div class="rng">&lt;40</div><div class="nm"><span class="en">Red</span><span class="zh">红区</span></div><div class="ds"><span class="en">Unlistable. No token, no disclosure page, no investor materials.</span><span class="zh">不可挂牌。无通证、无披露页、无投资者材料。</span></div></div>
+      <div class="band brz"><div class="rng">40–59</div><div class="nm"><span class="en">Bronze</span><span class="zh">铜级</span></div><div class="ds"><span class="en">Sandbox only. Internal pilot capital, no external solicitation.</span><span class="zh">仅沙盒。自有试点资金，不得对外招揽。</span></div></div>
+      <div class="band slv"><div class="rng">60–79</div><div class="nm"><span class="en">Silver</span><span class="zh">银级</span></div><div class="ds"><span class="en">Qualified investors only, private placement or exemption.</span><span class="zh">仅合格投资者，私募或豁免发行。</span></div></div>
+      <div class="band gld"><div class="rng">80+</div><div class="nm"><span class="en">Gold</span><span class="zh">金级</span></div><div class="ds"><span class="en">Eligible for licensed venue circulation, subject to local law.</span><span class="zh">在持牌场所流转，仍受当地法律约束。</span></div></div>
+    </div>
+    <div class="hero-actions" style="margin-top:26px">
+      <a class="btn" href="pcx.html"><span class="en">Full rubric, worked example, disclosure ledger</span><span class="zh">完整评分细则、算例、披露账本</span><span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRUCTURE TEASER ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">06 / <span class="en">Company</span><span class="zh">公司</span></span>
+        <h2 style="margin-bottom:16px"><span class="en">Five separations before the first token</span><span class="zh">在发第一个通证之前，先做五重隔离</span></h2>
+        <p style="margin-bottom:14px"><span class="en">Most RWA failures are not technical. They are one entity holding the asset, the cash, the rating and the disclosure at the same time.</span>
+        <span class="zh">多数 RWA 的失败不是技术问题，而是同一个主体同时拿着资产、现金、评级和披露权。</span></p>
+        <ul class="bullets">
+          <li class="on"><span class="en">Issuer ≠ custodian</span><span class="zh">发行方 ≠ 托管方</span></li>
+          <li class="on"><span class="en">Issuer ≠ rater</span><span class="zh">发行方 ≠ 评级方</span></li>
+          <li class="on"><span class="en">Asset SPV ≠ group treasury</span><span class="zh">资产 SPV ≠ 集团资金池</span></li>
+          <li class="on"><span class="en">Technology entity holds no client assets</span><span class="zh">技术主体不持有任何客户资产</span></li>
+          <li class="on"><span class="en">Foundation governs the standard, not the profit</span><span class="zh">基金会治理标准，不参与分利</span></li>
+        </ul>
+        <div class="hero-actions"><a class="btn" href="structure.html"><span class="en">Entity map &amp; charter</span><span class="zh">主体图谱与宪章</span><span class="ar">→</span></a></div>
+      </div>
+      <div class="org">
+        <div class="tier t1">
+          <div class="node top">
+            <div class="jt"><span class="en">Holdco · Cayman</span><span class="zh">控股 · 开曼</span></div>
+            <div class="nm">JEBI Trust Holdings</div>
+            <div class="ds"><span class="en">Owns brand, standard, and group IP. Holds no client asset.</span><span class="zh">持有品牌、标准与集团 IP。不持有客户资产。</span></div>
+          </div>
+        </div>
+        <div class="conn"></div>
+        <div class="tier t2">
+          <div class="node">
+            <div class="jt"><span class="en">HK</span><span class="zh">香港</span></div>
+            <div class="nm">JEBI Trust (HK)</div>
+            <div class="ds"><span class="en">Regional HQ, treasury, licensing</span><span class="zh">区域总部、资金、牌照</span></div>
+          </div>
+          <div class="node">
+            <div class="jt"><span class="en">HK · SFC path</span><span class="zh">香港 · 证监会路径</span></div>
+            <div class="nm">JT Asset Management</div>
+            <div class="ds"><span class="en">Sponsor / manager for REIT &amp; fund vehicles</span><span class="zh">REITs 与基金载体的发起/管理</span></div>
+          </div>
+          <div class="node">
+            <div class="jt"><span class="en">PRC · WFOE</span><span class="zh">中国 · 外商独资</span></div>
+            <div class="nm">JEBI Technology</div>
+            <div class="ds"><span class="en">Software, sensors, data. Zero client assets.</span><span class="zh">软件、传感器、数据。不持有客户资产。</span></div>
+          </div>
+        </div>
+        <div class="conn"></div>
+        <div class="tier t3">
+          <div class="node spv"><div class="jt">SPV 01</div><div class="nm"><span class="en">Receipt vehicle</span><span class="zh">仓单载体</span></div></div>
+          <div class="node spv"><div class="jt">SPV 02</div><div class="nm"><span class="en">Carbon vehicle</span><span class="zh">碳资产载体</span></div></div>
+          <div class="node spv"><div class="jt">SPV 03</div><div class="nm"><span class="en">Equipment vehicle</span><span class="zh">设备载体</span></div></div>
+          <div class="node spv"><div class="jt">SPV 04</div><div class="nm"><span class="en">Cash-flow vehicle</span><span class="zh">现金流载体</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASSET TEASER ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">07 / <span class="en">Sequencing</span><span class="zh">排序</span></span>
+      <h2><span class="en">Not all coffee assets deserve a token</span><span class="zh">不是所有咖啡资产都配得上一枚通证</span></h2>
+      <p><span class="en">Assets are ranked by verifiability per unit of legal risk — not by size, story, or how badly the owner needs cash.</span>
+      <span class="zh">排序依据是“每单位法律风险对应的可验证性”，不是规模、不是故事，也不是资产方有多缺钱。</span></p>
+    </div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr>
+          <th>#</th>
+          <th><span class="en">Asset class</span><span class="zh">资产类别</span></th>
+          <th><span class="en">Preliminary legal character</span><span class="zh">初步法律定性</span></th>
+          <th><span class="en">Gate</span><span class="zh">闸门</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="mono">01</td><td><span class="en">Warehouse receipt</span><span class="zh">咖啡仓单</span></td><td><span class="en">Document of title / contractual custody claim</span><span class="zh">所有权凭证 / 合同托管请求权</span></td><td class="mono">PCX ≥ 60</td></tr>
+          <tr><td class="mono">02</td><td><span class="en">Carbon removal</span><span class="zh">碳移除量</span></td><td><span class="en">Environmental attribute; commodity-like if retired, not sold as yield</span><span class="zh">环境属性；若用于注销则近似商品，不得作为收益权出售</span></td><td class="mono">PCX ≥ 65</td></tr>
+          <tr><td class="mono">03</td><td><span class="en">Grow pod / store equipment</span><span class="zh">种植舱 / 门店设备</span></td><td><span class="en">Movable property + lease receivable</span><span class="zh">动产 + 租赁应收</span></td><td class="mono">PCX ≥ 60</td></tr>
+          <tr><td class="mono">04</td><td><span class="en">Recipe &amp; IP royalty</span><span class="zh">配方与 IP 版税</span></td><td><span class="en">Licence contract; royalty interest may be a security</span><span class="zh">许可合同；版税收益权可能构成证券</span></td><td class="mono">PCX ≥ 70</td></tr>
+          <tr><td class="mono">05</td><td><span class="en">Store / mall cash flow</span><span class="zh">门店 / 商场现金流</span></td><td><span class="en">Likely a security or collective investment</span><span class="zh">很可能构成证券或集合投资</span></td><td class="mono">PCX ≥ 80 + licence</td></tr>
+          <tr><td class="mono">06</td><td><span class="en">REIT units</span><span class="zh">REITs 份额</span></td><td><span class="en">Regulated collective investment scheme</span><span class="zh">受监管的集体投资计划</span></td><td class="mono">PCX ≥ 85 + licence</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note"><span class="en">Legal character is a preliminary planning view only. Each class requires a written opinion from licensed counsel in the issuing jurisdiction before any structure is adopted.</span>
+    <span class="zh">法律定性仅为规划阶段的初步判断。每一类资产在采用任何结构之前，都必须由发行地持牌律师出具书面意见。</span></p>
+    <div class="hero-actions"><a class="btn" href="assets.html"><span class="en">The full ladder</span><span class="zh">完整阶梯</span><span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<!-- ============ CLOSE ============ -->
+<section class="sec">
+  <div class="wrap">
+    <p class="serif-quote" style="max-width:900px">
+      <span class="en">In a lemons market, buyers assume an unknown brand is a bad car. In an asset market, investors assume an unverified asset is a bad asset. Both defaults are correct until someone produces evidence — and every day you stay silent, you are underwriting somebody else.</span>
+      <span class="zh">在柠檬市场里，买方默认陌生品牌是烂车；在资产市场里，投资者默认未确权资产是烂资产。在有人拿出证据之前，这两个默认都是对的——而你每沉默一天，都是在替别人背书。</span>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/chrome.js"></script>
+</body>
+</html>

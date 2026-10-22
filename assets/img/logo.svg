@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 72" width="204" height="72" role="img" aria-label="JEBI Trust">
+  <title>JEBI Trust</title>
+  <!-- seal -->
+  <path d="M32 4 L56.2 18 L56.2 46 L32 60 L7.8 46 L7.8 18 Z"
+        fill="rgba(29,155,240,0.05)" stroke="#2c343d" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- three codes: batch / asset / token -->
+  <g stroke-linecap="round" stroke-width="5.5">
+    <path d="M19 22.5 H32" stroke="#39424c"/>
+    <path d="M19 31.5 H38.5" stroke="#6b7884"/>
+    <path d="M19 40.5 H45.5" stroke="#1d9bf0"/>
+  </g>
+  <!-- ledger spine -->
+  <path d="M46.5 16.5 V47.5" stroke="#1d9bf0" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
+  <!-- wordmark -->
+  <text x="82" y="36" fill="#e9ecef"
+        font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="700" letter-spacing="0.4">JEBI</text>
+  <text x="83.5" y="55" fill="#1d9bf0"
+        font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="9.6" font-weight="600" letter-spacing="4.9">TRUST</text>
+</svg>
