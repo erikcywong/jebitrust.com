@@ -8,7 +8,8 @@ Static multi-language site (EN / 简体中文). No build step — plain HTML + s
 
 | File | Content |
 |---|---|
-| `index.html` | Thesis: coffee's proof problem, the Verified Event unit, six revenue lines, the nine checks, refusals |
+| `index.html` | Thesis: coffee's proof problem, the Verified Event unit, six revenue lines, the nine checks, refusals; embedded concept film (87s, 8 chapters) |
+| `assets/video/` | `jebi-data-engine.mp4` (87s, 1080p, h264+aac, ~4.3MB) + poster.jpg; chapter times in `assets/js/film.js` mirror `_video/film.html` scene starts |
 | `data.html` | Data engine: pod-level primary data → eight sectors, mutual-empowerment matrix, four compounding loops with kill conditions, falsifiers, investor lenses |
 | `structure.html` | Entity map, separation of duties, Trust Charter (9 articles), governance, intercompany contracts |
 | `trust.html` | Admission test in full (9 checks, evidence + fail condition), access tiers, disclosure ledger, post-admission rules |
@@ -24,6 +25,7 @@ Static multi-language site (EN / 简体中文). No build step — plain HTML + s
 - Hand-written HTML, one CSS design system (`assets/css/style.css`), X.com-adjacent dark theme
 - `assets/js/i18n.js` — EN/中文 toggle, persisted in `localStorage`, fires `langchange` for chart re-render
 - `assets/js/chrome.js` — shared floating header/footer, active-nav state
+- `assets/js/film.js` — index film player: cover click, hero CTA, chapter seek/highlight; native controls only while playing
 - No JS framework, no chart library, no runtime dependencies
 - GitHub Pages, custom domain `www.jebitrust.com` (see `CNAME`)
 

@@ -28,7 +28,8 @@
       <span class="zh">链条上的每个人——消费者、加盟商、放款人、投资者——都被要求相信一个陌生人的说法。JEBI Trust 把这些说法变成可审计的证据，把证据绑定到三个码上，并对“调用证据”收费，而不是从咖啡里抽成。</span>
     </p>
     <div class="hero-actions">
-      <a class="btn primary" href="structure.html"><span class="en">See the company structure</span><span class="zh">查看公司结构</span><span class="ar">→</span></a>
+      <a class="btn primary" href="#film" data-film-play><span class="en">Watch the film · 1:27</span><span class="zh">观看概念影片 · 1:27</span><span class="ar">▶</span></a>
+      <a class="btn" href="structure.html"><span class="en">See the company structure</span><span class="zh">查看公司结构</span><span class="ar">→</span></a>
       <a class="btn" href="trust.html"><span class="en">The nine admission checks</span><span class="zh">九项准入检验</span><span class="ar">→</span></a>
     </div>
 
@@ -37,6 +38,44 @@
       <div class="stat"><div class="n">9</div><div class="k"><span class="en">admission checks, all required</span><span class="zh">项准入检验，缺一不可</span></div></div>
       <div class="stat"><div class="n">6</div><div class="k"><span class="en">asset classes, one sequence</span><span class="zh">类资产，一个先后顺序</span></div></div>
       <div class="stat"><div class="n">0</div><div class="k"><span class="en">exceptions to a failed check</span><span class="zh">项检验失败的例外</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILM ============ -->
+<section class="sec" id="film">
+  <div class="wrap">
+    <div class="film-head">
+      <div class="sec-head">
+        <span class="eyebrow">00 / <span class="en">The film</span><span class="zh">概念影片</span></span>
+        <h2><span class="en">The data engine, in 87 seconds</span><span class="zh">87 秒看懂数据引擎</span></h2>
+        <p><span class="en">From the pod's raw readings to eight business lines feeding each other — every chapter rests a few seconds so you can read it.</span>
+        <span class="zh">从种植舱的原始读数，到八条业务线互相喂哺——每一章结尾都会停留数秒，方便逐页阅读。</span></p>
+      </div>
+      <span class="film-meta">1920×1080 · 24FPS · <span class="en">8 CHAPTERS</span><span class="zh">8 个章节</span></span>
+    </div>
+
+    <div class="player">
+      <video id="filmvideo" preload="metadata" playsinline
+             poster="assets/video/poster.jpg">
+        <source src="assets/video/jebi-data-engine.mp4" type="video/mp4">
+        <span class="en">Your browser does not support embedded video.</span><span class="zh">当前浏览器不支持内嵌视频。</span>
+      </video>
+      <button class="cover" type="button" aria-label="Play film">
+        <span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+        <span class="lbl"><span class="en">Play the film · 1:27</span><span class="zh">播放影片 · 1:27</span></span>
+      </button>
+    </div>
+
+    <div class="chaps" id="chaps">
+      <button class="chap" type="button" data-t="0"><span class="i">00</span><span class="nm"><span class="en">Title</span><span class="zh">片头</span></span><span class="tm">0:00</span></button>
+      <button class="chap" type="button" data-t="10.1"><span class="i">01</span><span class="nm"><span class="en">The default</span><span class="zh">默认判断</span></span><span class="tm">0:10</span></button>
+      <button class="chap" type="button" data-t="21.2"><span class="i">02</span><span class="nm"><span class="en">The instrument</span><span class="zh">采集层</span></span><span class="tm">0:21</span></button>
+      <button class="chap" type="button" data-t="32.9"><span class="i">03</span><span class="nm"><span class="en">The conversion</span><span class="zh">转换规则</span></span><span class="tm">0:33</span></button>
+      <button class="chap" type="button" data-t="44.2"><span class="i">04</span><span class="nm"><span class="en">The stack</span><span class="zh">四层栈</span></span><span class="tm">0:44</span></button>
+      <button class="chap" type="button" data-t="55.7"><span class="i">05</span><span class="nm"><span class="en">The fan-out</span><span class="zh">八台转换器</span></span><span class="tm">0:56</span></button>
+      <button class="chap" type="button" data-t="67.6"><span class="i">06</span><span class="nm"><span class="en">The loops</span><span class="zh">四个回路</span></span><span class="tm">1:08</span></button>
+      <button class="chap" type="button" data-t="77.9"><span class="i">07</span><span class="nm"><span class="en">The close</span><span class="zh">片尾</span></span><span class="tm">1:18</span></button>
     </div>
   </div>
 </section>
@@ -345,5 +384,6 @@
 
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/chrome.js"></script>
+<script src="assets/js/film.js"></script>
 </body>
 </html>
