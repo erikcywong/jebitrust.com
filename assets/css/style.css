@@ -34,7 +34,7 @@ body{
   font-size:16px;
   line-height:1.62;
   letter-spacing:-.005em;
-  padding-top:104px;
+  padding-top:120px;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
@@ -93,8 +93,8 @@ header.site{
 header.site .bar{
   pointer-events:auto;
   max-width:var(--max);margin:0 auto;
-  height:62px;display:flex;align-items:center;gap:10px;
-  padding:0 10px 0 16px;
+  height:78px;display:flex;align-items:center;gap:10px;
+  padding:0 10px 0 18px;
   background:rgba(6,7,9,.82);
   border:1px solid #1c2128;
   border-radius:16px;
@@ -103,13 +103,7 @@ header.site .bar{
   box-shadow:0 12px 40px rgba(0,0,0,.6);
 }
 .brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;margin-right:6px}
-.brand img{height:34px;width:auto}
-.pcx-pill{
-  font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;
-  color:var(--accent);border:1px solid rgba(29,155,240,.34);
-  background:rgba(29,155,240,.08);border-radius:999px;
-  padding:3px 8px;white-space:nowrap;
-}
+.brand img{height:64px;width:auto}
 nav.main{display:flex;align-items:center;gap:2px;margin-left:auto;flex-wrap:nowrap}
 nav.main a{
   font-size:13.5px;color:var(--text-2);padding:8px 11px;border-radius:9px;
@@ -286,7 +280,7 @@ table.tbl td .mono{font-size:12.5px;color:var(--text-2)}
 /* ---------- footer ---------- */
 footer.site{border-top:1px solid var(--line);margin-top:40px;padding:52px 0 40px;background:#040506}
 .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
-.foot-brand img{height:30px;margin-bottom:14px}
+.foot-brand img{height:48px;margin-bottom:16px}
 .foot-col h5{
   font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--muted);margin-bottom:12px;font-weight:500;
@@ -321,9 +315,9 @@ ul.bullets li.on::before{background:var(--accent)}
   .foot-top{grid-template-columns:1fr 1fr}
 }
 @media (max-width:860px){
-  body{padding-top:96px}
+  body{padding-top:104px}
   nav.main{
-    display:none;position:absolute;top:68px;left:0;right:0;
+    display:none;position:absolute;top:84px;left:0;right:0;
     flex-direction:column;align-items:stretch;gap:2px;
     background:rgba(6,7,9,.97);border:1px solid #1c2128;border-radius:14px;
     padding:10px;backdrop-filter:blur(18px);
@@ -334,8 +328,7 @@ ul.bullets li.on::before{background:var(--accent)}
   .burger{display:block}
   header.site{position:fixed}
   header.site .bar{position:relative}
-  .brand img{height:28px}
-  .pcx-pill{display:none}
+  .brand img{height:48px}
   .g2,.g3,.g4,.tier.t2,.tier.t3,.tier.a2,.tier.a4,.bands{grid-template-columns:1fr}
   .hero{padding:36px 0 24px}
   .sec{padding:52px 0}

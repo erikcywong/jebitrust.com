@@ -43,9 +43,26 @@
         <span class="zh">六个“是”让资产上移；任何一句“这个以后再说”让它下移，无论规模多大。</span></p>
       </div>
       <div>
-        <div id="gatechart" class="chart" style="height:420px"></div>
-        <p class="small" style="margin-top:12px"><span class="en">Minimum PCX required before the class may be structured at all. Higher gate = heavier legal wrapper, not better asset.</span>
-        <span class="zh">该类别允许结构化之前所需的最低 PCX。门槛越高，代表法律外壳越重，而不是资产越好。</span></p>
+        <div class="tbl-wrap">
+          <table class="tbl" style="min-width:0">
+            <thead><tr>
+              <th>#</th>
+              <th><span class="en">Asset class</span><span class="zh">资产类别</span></th>
+              <th><span class="en">Verifiability</span><span class="zh">可验证性</span></th>
+              <th><span class="en">Legal wrapper</span><span class="zh">法律外壳</span></th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="mono">01</td><td><span class="en">Receipt</span><span class="zh">仓单</span></td><td class="okc"><span class="en">High</span><span class="zh">高</span></td><td><span class="en">Light</span><span class="zh">轻</span></td></tr>
+              <tr><td class="mono">02</td><td><span class="en">Carbon removal</span><span class="zh">碳移除</span></td><td class="okc"><span class="en">High</span><span class="zh">高</span></td><td><span class="en">Medium</span><span class="zh">中</span></td></tr>
+              <tr><td class="mono">03</td><td><span class="en">Equipment</span><span class="zh">设备</span></td><td><span class="en">Medium</span><span class="zh">中</span></td><td><span class="en">Medium</span><span class="zh">中</span></td></tr>
+              <tr><td class="mono">04</td><td><span class="en">IP royalty</span><span class="zh">IP 版税</span></td><td><span class="en">Medium</span><span class="zh">中</span></td><td><span class="en">Heavy</span><span class="zh">重</span></td></tr>
+              <tr><td class="mono">05</td><td><span class="en">Store cash flow</span><span class="zh">门店现金流</span></td><td><span class="en">Medium</span><span class="zh">中</span></td><td class="badc"><span class="en">Very heavy</span><span class="zh">很重</span></td></tr>
+              <tr><td class="mono">06</td><td><span class="en">REIT units</span><span class="zh">REITs 份额</span></td><td class="okc"><span class="en">High</span><span class="zh">高</span></td><td class="badc"><span class="en">Regulated product</span><span class="zh">受监管产品</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small" style="margin-top:12px"><span class="en">Sequence = verifiability ÷ weight of the legal wrapper. These are relative judgements for planning, not scores, and REIT units rank last because the product is already regulated rather than because the evidence is weak.</span>
+        <span class="zh">排序 = 可验证性 ÷ 法律外壳重量。这些是规划用的相对判断，不是评分。REITs 份额排在最后，是因为产品本身已受监管，而不是因为证据弱。</span></p>
       </div>
     </div>
   </div>
@@ -56,7 +73,7 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">4.2 <span class="en">The six classes</span><span class="zh">六个类别</span></span>
-      <h2><span class="en">Structure, legal question, gate, and the way it usually breaks</span><span class="zh">结构、法律问题、闸门，以及它通常怎么坏</span></h2>
+      <h2><span class="en">Structure, legal question, admission condition, and the way it usually breaks</span><span class="zh">结构、法律问题、准入条件，以及它通常怎么坏</span></h2>
     </div>
 
     <div class="g2">
@@ -69,7 +86,7 @@
         <div class="kv">
           <div class="row"><b><span class="en">Structure</span><span class="zh">结构</span></b><span><span class="en">SPV holds title → licensed warehouse custodies → bank receives pledge → registry writes the lock before funds release.</span><span class="zh">SPV 持所有权 → 持牌仓库托管 → 银行受押 → 放款前先在登记处写入锁定。</span></span></div>
           <div class="row"><b><span class="en">Legal Q</span><span class="zh">法律问题</span></b><span><span class="en">Document of title, or contractual claim? Does a transferable token constitute a security?</span><span class="zh">它是所有权凭证，还是合同请求权？可流转的通证是否构成证券？</span></span></div>
-          <div class="row"><b><span class="en">Gate</span><span class="zh">闸门</span></b><span class="mono">PCX ≥ 60 <span class="en">(financing)</span><span class="zh">（融资）</span> / ≥ 70 <span class="en">(transferable token)</span><span class="zh">（可流转通证）</span></span></div>
+          <div class="row"><b><span class="en">Admission</span><span class="zh">准入</span></b><span>9/9 + <span class="en">bank pledge agreement. A transferable token additionally needs the opinion to permit it.</span><span class="zh">银行质押协议。可流转通证还须法律意见允许。</span></span></div>
           <div class="row"><b><span class="en">Breaks via</span><span class="zh">失效方式</span></b><span><span class="en">Double pledge · phantom stock · quality drift at re-inspection.</span><span class="zh">重复质押 · 空单 · 复检品质漂移。</span></span></div>
         </div>
         <div class="tags"><span class="tag ok"><span class="en">registry lock</span><span class="zh">登记锁定</span></span><span class="tag ok"><span class="en">independent sampler</span><span class="zh">独立抽样</span></span><span class="tag ok"><span class="en">shrinkage insurance</span><span class="zh">短量险</span></span></div>
@@ -83,7 +100,7 @@
         <div class="kv">
           <div class="row"><b><span class="en">Structure</span><span class="zh">结构</span></b><span><span class="en">Per-batch MRV → serial numbers → registry retirement account held by the SPV, not the seller.</span><span class="zh">按批次 MRV → 序列号 → 由 SPV（而非卖方）持有的登记处注销账户。</span></span></div>
           <div class="row"><b><span class="en">Legal Q</span><span class="zh">法律问题</span></b><span><span class="en">Environmental attribute or financial product? Tax and cross-border treatment?</span><span class="zh">环境属性还是金融产品？税务与跨境如何处理？</span></span></div>
-          <div class="row"><b><span class="en">Gate</span><span class="zh">闸门</span></b><span class="mono">PCX ≥ 65</span></div>
+          <div class="row"><b><span class="en">Admission</span><span class="zh">准入</span></b><span>9/9 + <span class="en">independent methodology review and a funded buffer pool.</span><span class="zh">独立方法学核查 + 已注入缓冲池。</span></span></div>
           <div class="row"><b><span class="en">Breaks via</span><span class="zh">失效方式</span></b><span><span class="en">Double counting · reversal (permanence) · vintage fraud.</span><span class="zh">重复计算 · 逆转（持久性） · 年份造假。</span></span></div>
         </div>
         <div class="tags"><span class="tag ok"><span class="en">serial retirement</span><span class="zh">序列注销</span></span><span class="tag ok"><span class="en">buffer pool</span><span class="zh">缓冲池</span></span><span class="tag bad"><span class="en">no forward sale</span><span class="zh">不做远期销售</span></span></div>
@@ -97,7 +114,7 @@
         <div class="kv">
           <div class="row"><b><span class="en">Structure</span><span class="zh">结构</span></b><span><span class="en">SPV owns, operator leases; title registry by serial; telemetry as continuous possession evidence.</span><span class="zh">SPV 持有、运营方承租；按序号登记产权；遥测作为持续占有的证据。</span></span></div>
           <div class="row"><b><span class="en">Legal Q</span><span class="zh">法律问题</span></b><span><span class="en">Is perfection of title required by filing? Do fractional lease receivables become securities?</span><span class="zh">产权完善是否需要登记备案？拆分后的租赁应收是否构成证券？</span></span></div>
-          <div class="row"><b><span class="en">Gate</span><span class="zh">闸门</span></b><span class="mono">PCX ≥ 60</span></div>
+          <div class="row"><b><span class="en">Admission</span><span class="zh">准入</span></b><span>9/9 + <span class="en">title registration by serial number and bound telemetry.</span><span class="zh">按序号完成产权登记并绑定遥测。</span></span></div>
           <div class="row"><b><span class="en">Breaks via</span><span class="zh">失效方式</span></b><span><span class="en">Unperfected title · equipment relocated · operator abandons the site.</span><span class="zh">产权未完善 · 设备被转移 · 运营方弃场。</span></span></div>
         </div>
         <div class="tags"><span class="tag ok"><span class="en">serial registry</span><span class="zh">序号登记</span></span><span class="tag ok"><span class="en">loss-payee clause</span><span class="zh">保险赔款受益人条款</span></span><span class="tag"><span class="en">recovery plan per site</span><span class="zh">逐场回收预案</span></span></div>
@@ -111,7 +128,7 @@
         <div class="kv">
           <div class="row"><b><span class="en">Structure</span><span class="zh">结构</span></b><span><span class="en">IP holdco → licence agreements → royalty account → per-licensee audit rights.</span><span class="zh">IP 控股 → 许可合同 → 版税账户 → 对被许可方的审计权。</span></span></div>
           <div class="row"><b><span class="en">Legal Q</span><span class="zh">法律问题</span></b><span><span class="en">Is a royalty interest a security? Assignment or licence? Moral rights and termination risk?</span><span class="zh">版税收益权是否构成证券？转让还是许可？精神权利与终止风险？</span></span></div>
-          <div class="row"><b><span class="en">Gate</span><span class="zh">闸门</span></b><span class="mono">PCX ≥ 70</span></div>
+          <div class="row"><b><span class="en">Admission</span><span class="zh">准入</span></b><span>9/9 + <span class="en">audited royalty account and an exercised licensee audit right.</span><span class="zh">经审计的版税账户 + 实际行使过被许可方审计权。</span></span></div>
           <div class="row"><b><span class="en">Breaks via</span><span class="zh">失效方式</span></b><span><span class="en">Licensee under-reports sales · infringement · key-person dependency.</span><span class="zh">被许可方少报销售 · 侵权 · 关键人依赖。</span></span></div>
         </div>
         <div class="tags"><span class="tag ok"><span class="en">POS-linked royalty calc</span><span class="zh">POS 联动版税计算</span></span><span class="tag ok"><span class="en">escrowed source</span><span class="zh">源文件托管</span></span><span class="tag warn"><span class="en">no projected royalties</span><span class="zh">不预测未来版税</span></span></div>
@@ -125,7 +142,7 @@
         <div class="kv">
           <div class="row"><b><span class="en">Structure</span><span class="zh">结构</span></b><span><span class="en">SPV holds receivables or revenue-share rights; direct POS capture; landlord consent; store-level P&amp;L.</span><span class="zh">SPV 持有应收或收入分成权；POS 直连归集；业主同意；门店级损益。</span></span></div>
           <div class="row"><b><span class="en">Legal Q</span><span class="zh">法律问题</span></b><span><span class="en">Security / CIS in almost every case. Which exemption, which investor scope, which disclosure regime?</span><span class="zh">几乎必然构成证券/集合投资计划。适用哪项豁免、哪类投资者、哪套披露制度？</span></span></div>
-          <div class="row"><b><span class="en">Gate</span><span class="zh">闸门</span></b><span class="mono">PCX ≥ 80 + <span class="en">licence</span><span class="zh">牌照</span></span></div>
+          <div class="row"><b><span class="en">Admission</span><span class="zh">准入</span></b><span>9/9 + <span class="en">the relevant licence, obtained before listing.</span><span class="zh">挂牌前已取得相应牌照。</span></span></div>
           <div class="row"><b><span class="en">Breaks via</span><span class="zh">失效方式</span></b><span><span class="en">Revenue diversion · related-party leases · cannibalisation between outlets.</span><span class="zh">收入转移 · 关联租赁 · 门店互相蚕食。</span></span></div>
         </div>
         <div class="tags"><span class="tag bad"><span class="en">no guaranteed rent</span><span class="zh">不承诺保底租金</span></span><span class="tag bad"><span class="en">no public solicitation</span><span class="zh">不公开劝诱</span></span><span class="tag warn"><span class="en">qualified investors only</span><span class="zh">仅合格投资者</span></span></div>
@@ -139,7 +156,7 @@
         <div class="kv">
           <div class="row"><b><span class="en">Structure</span><span class="zh">结构</span></b><span><span class="en">REIT holds income property → units registered as before → token used only as a record / transfer instrument where lawful.</span><span class="zh">REIT 持有收益型物业 → 份额照常登记 → 通证仅在合法范围内作为记录/流转工具。</span></span></div>
           <div class="row"><b><span class="en">Legal Q</span><span class="zh">法律问题</span></b><span><span class="en">Double regulation. Is the token itself a security? Which venue may list it?</span><span class="zh">双重监管。通证本身是否构成证券？哪个场所可以挂牌？</span></span></div>
-          <div class="row"><b><span class="en">Gate</span><span class="zh">闸门</span></b><span class="mono">PCX ≥ 85 + <span class="en">licence</span><span class="zh">牌照</span></span></div>
+          <div class="row"><b><span class="en">Admission</span><span class="zh">准入</span></b><span>9/9 + <span class="en">licence + full REIT disclosure, with the token as a record layer only.</span><span class="zh">牌照 + 完整 REITs 披露；通证仅作记录层。</span></span></div>
           <div class="row"><b><span class="en">Breaks via</span><span class="zh">失效方式</span></b><span><span class="en">Using the token to bypass REIT licensing, investor limits or property valuation rules.</span><span class="zh">用通证规避 REITs 牌照、投资者限制或物业估值规则。</span></span></div>
         </div>
         <div class="tags"><span class="tag bad"><span class="en">never a wrapper</span><span class="zh">绝不做外壳</span></span><span class="tag ok"><span class="en">same disclosure as the REIT</span><span class="zh">与 REITs 同一套披露</span></span></div>
@@ -201,77 +218,8 @@
 
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/chrome.js"></script>
-<script>
-(function () {
-  var el = document.getElementById('gatechart');
-  if (!el) return;
-  var chart = null;
 
-  function data() {
-    var zh = document.documentElement.getAttribute('data-lang') === 'zh';
-    var rows = zh
-      ? [['仓单', 60], ['碳移除', 65], ['设备', 60], ['IP 版税', 70], ['门店现金流', 80], ['REITs 份额', 85]]
-      : [['Receipt', 60], ['Carbon removal', 65], ['Equipment', 60], ['IP royalty', 70], ['Store cash flow', 80], ['REIT units', 85]];
-    return {
-      cats: rows.map(function (r) { return r[0]; }),
-      vals: rows.map(function (r) { return r[1]; }),
-      axis: zh ? '最低 PCX' : 'Minimum PCX'
-    };
-  }
-
-  function draw() {
-    if (typeof echarts === 'undefined') {
-      el.innerHTML = '<div style="padding:24px;color:#71767b;font-size:13px;line-height:1.6">' +
-        '<span class="en">Gates: receipt 60 · carbon 65 · equipment 60 · IP 70 · cash flow 80 · REIT 85.</span>' +
-        '<span class="zh">门槛：仓单 60 · 碳 65 · 设备 60 · IP 70 · 现金流 80 · REITs 85。</span></div>';
-      return;
-    }
-    if (!chart) chart = echarts.init(el, null, { renderer: 'canvas' });
-    var d = data();
-    chart.setOption({
-      backgroundColor: 'transparent',
-      grid: { left: 8, right: 46, top: 18, bottom: 10, containLabel: true },
-      xAxis: {
-        type: 'value', max: 100, splitLine: { lineStyle: { color: '#151a1f' } },
-        axisLabel: { color: '#71767b', fontSize: 10, fontFamily: 'monospace' },
-        axisLine: { show: false }, axisTick: { show: false }
-      },
-      yAxis: {
-        type: 'category', data: d.cats, inverse: true,
-        axisLabel: { color: '#a9b1ba', fontSize: 11.5 },
-        axisLine: { lineStyle: { color: '#1b2026' } }, axisTick: { show: false }
-      },
-      tooltip: {
-        trigger: 'axis', axisPointer: { type: 'shadow' },
-        backgroundColor: '#0b0d0f', borderColor: '#242a31',
-        textStyle: { color: '#e9ecef', fontSize: 12 },
-        formatter: function (p) { return p[0].name + ' · PCX ≥ ' + p[0].value; }
-      },
-      series: [{
-        type: 'bar', barWidth: 14,
-        data: d.vals.map(function (v) {
-          var c = v >= 85 ? '#e8c37a' : v >= 80 ? '#f4212e' : v >= 70 ? '#b9c2cc' : '#1d9bf0';
-          return { value: v, itemStyle: { color: c, borderRadius: [0, 3, 3, 0] } };
-        }),
-        label: { show: true, position: 'right', color: '#a9b1ba', fontSize: 11, fontFamily: 'monospace', formatter: '{c}' },
-        markLine: {
-          silent: true, symbol: 'none',
-          lineStyle: { color: 'rgba(244,33,46,.55)', type: 'dashed' },
-          data: [{ xAxis: 40 }],
-          label: { formatter: 'PCX 40', color: '#f4212e', fontSize: 10, fontFamily: 'monospace', position: 'insideEndTop' }
-        }
-      }]
-    }, true);
-    chart.resize();
-  }
-
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', draw); else draw();
-  window.addEventListener('resize', function () { if (chart) chart.resize(); });
-  window.addEventListener('langchange', function () { setTimeout(draw, 20); });
-})();
-</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 # JEBI Trust — jebitrust.com
 
-Trust infrastructure for the coffee chain. Three codes (batch · asset · token), one ledger, one listing floor: **PCX 40**.
+Trust infrastructure for the coffee chain. Three codes (batch · asset · token), one ledger, nine admission checks: all of them, or no token.
 
 Static multi-language site (EN / 简体中文). No build step — plain HTML + shared CSS/JS.
 
@@ -8,18 +8,22 @@ Static multi-language site (EN / 简体中文). No build step — plain HTML + s
 
 | File | Content |
 |---|---|
-| `index.html` | Thesis: coffee's proof problem, the Verified Event unit, six revenue lines, refusals |
+| `index.html` | Thesis: coffee's proof problem, the Verified Event unit, six revenue lines, the nine checks, refusals |
 | `structure.html` | Entity map, separation of duties, Trust Charter (9 articles), governance, intercompany contracts |
-| `pcx.html` | Provenance Confidence indeX: 5×20 rubric, bands & gates, worked example (radar), surveillance, disclosure ledger |
+| `trust.html` | Admission test in full (9 checks, evidence + fail condition), access tiers, disclosure ledger, post-admission rules |
 | `assets.html` | Asset ladder: receipt → carbon → equipment → IP → cash flow → REIT, plus the "never tokenise" list |
 | `roadmap.html` | Gates G0–G4 with exit evidence, kill criteria, falsifiable assumptions, failure modes |
+
+## Logo
+
+`assets/img/logo.svg` — hexagon seal + three code bars (batch / asset / token) + ledger spine, with the wordmark set at **40px character size** in a 264×64 viewBox. Rendered 1:1 (64px tall) in the header so the type stays at true 40px; `favicon.svg` is the mark alone.
 
 ## Stack
 
 - Hand-written HTML, one CSS design system (`assets/css/style.css`), X.com-adjacent dark theme
-- `assets/js/i18n.js` — EN/中文 toggle, persisted in `localStorage`, re-renders ECharts on `langchange`
+- `assets/js/i18n.js` — EN/中文 toggle, persisted in `localStorage`, fires `langchange` for chart re-render
 - `assets/js/chrome.js` — shared floating header/footer, active-nav state
-- ECharts 5 via jsDelivr (radar + bar charts, graceful text fallback offline)
+- No JS framework, no chart library, no runtime dependencies
 - GitHub Pages, custom domain `www.jebitrust.com` (see `CNAME`)
 
 ## DNS (registrar-managed)

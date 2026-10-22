@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JEBI Trust — Trust infrastructure for the coffee chain</title>
-<meta name="description" content="JEBI Trust is the verification and asset-credibility layer for a coffee chain: three codes (batch, asset, token), one ledger, and a single listing floor — PCX 40.">
+<meta name="description" content="JEBI Trust is the verification and asset-credibility layer for a coffee chain: three codes (batch, asset, token), one ledger, and nine admission checks that are all or nothing.">
 <meta property="og:title" content="JEBI Trust — Trust infrastructure for the coffee chain">
-<meta property="og:description" content="Three codes, one ledger, one floor: PCX 40.">
+<meta property="og:description" content="Three codes, one ledger, nine checks. All of them, or no token.">
 <meta property="og:image" content="assets/img/logo.svg">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -29,14 +29,14 @@
     </p>
     <div class="hero-actions">
       <a class="btn primary" href="structure.html"><span class="en">See the company structure</span><span class="zh">查看公司结构</span><span class="ar">→</span></a>
-      <a class="btn" href="pcx.html"><span class="en">How PCX 40 works</span><span class="zh">PCX 40 如何运作</span><span class="ar">→</span></a>
+      <a class="btn" href="trust.html"><span class="en">The nine admission checks</span><span class="zh">九项准入检验</span><span class="ar">→</span></a>
     </div>
 
     <div class="stats">
       <div class="stat"><div class="n">3</div><div class="k"><span class="en">codes: batch · asset · token</span><span class="zh">三码：批次 · 资产 · 通证</span></div></div>
-      <div class="stat"><div class="n">40</div><div class="k"><span class="en">PCX listing floor</span><span class="zh">PCX 上链门槛</span></div></div>
-      <div class="stat"><div class="n">5</div><div class="k"><span class="en">dimensions, 20 points each</span><span class="zh">五个维度，各 20 分</span></div></div>
-      <div class="stat"><div class="n">0</div><div class="k"><span class="en">assets listable below the floor</span><span class="zh">低于门槛可上链的资产</span></div></div>
+      <div class="stat"><div class="n">9</div><div class="k"><span class="en">admission checks, all required</span><span class="zh">项准入检验，缺一不可</span></div></div>
+      <div class="stat"><div class="n">6</div><div class="k"><span class="en">asset classes, one sequence</span><span class="zh">类资产，一个先后顺序</span></div></div>
+      <div class="stat"><div class="n">0</div><div class="k"><span class="en">exceptions to a failed check</span><span class="zh">项检验失败的例外</span></div></div>
     </div>
   </div>
 </section>
@@ -121,8 +121,8 @@
         <div class="card acc">
           <span class="num">CODE 03 / TOKEN</span>
           <h3><span class="en">Token code</span><span class="zh">通证码</span></h3>
-          <p><span class="en">A claim on an asset code. It cannot exist on its own: no token without an asset, no asset without batch lineage, no listing below PCX 40.</span>
-          <span class="zh">对某个资产码的索取权。它不能独立存在：无资产不发通证，无批次血缘不算资产，低于 PCX 40 不得上链。</span></p>
+          <p><span class="en">A claim on an asset code. It cannot exist on its own: no token without an asset, no asset without batch lineage, no listing until all nine checks pass.</span>
+          <span class="zh">对某个资产码的索取权。它不能独立存在：无资产不发通证，无批次血缘不算资产，九项检验未全部通过不得上链。</span></p>
         </div>
       </div>
     </div>
@@ -181,10 +181,10 @@
             <td><span class="en">Mandatory once you choose to list; recurring by design</span><span class="zh">一旦选择挂牌即必需；结构上就是经常性收入</span></td>
           </tr>
           <tr>
-            <td><span class="en">PCX assessment &amp; surveillance</span><span class="zh">PCX 评估与持续跟踪</span></td>
-            <td class="mono"><span class="en">per assessment + annual surveillance</span><span class="zh">每次评估 + 年度跟踪</span></td>
-            <td><span class="en">Issuer (fixed fee, ring-fenced rater)</span><span class="zh">发行方（固定费，评级主体隔离）</span></td>
-            <td><span class="en">The rating is the product; if it can be bought, it is worthless</span><span class="zh">评级本身即产品；能买到的评级一文不值</span></td>
+            <td><span class="en">Verification &amp; inspection</span><span class="zh">核查与质检</span></td>
+            <td class="mono"><span class="en">per batch + annual surveillance</span><span class="zh">每批次 + 年度跟踪</span></td>
+            <td><span class="en">Asset owner (fixed fee, ring-fenced verifier)</span><span class="zh">资产方（固定费，核查主体隔离）</span></td>
+            <td><span class="en">The sign-off is the product; if it can be bought, it is worthless</span><span class="zh">签字本身即产品；能买到的签字一文不值</span></td>
           </tr>
         </tbody>
       </table>
@@ -214,23 +214,30 @@
   </div>
 </section>
 
-<!-- ============ PCX TEASER ============ -->
+<!-- ============ ADMISSION TEASER ============ -->
 <section class="sec">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">05 / <span class="en">The index</span><span class="zh">指数</span></span>
-      <h2><span class="en">One number everybody can argue with</span><span class="zh">一个所有人都可以质疑的数字</span></h2>
-      <p><span class="en">PCX — Provenance Confidence indeX — scores an asset 0–100 across five dimensions. 40 is the listing floor. Below 40 an asset is not "early stage"; it is unlistable, and saying so is the whole product.</span>
-      <span class="zh">PCX（Provenance Confidence indeX，溯源置信指数）用五个维度给资产打 0–100 分。40 是上链门槛。低于 40 不叫“早期”，叫“不可挂牌”——而敢说出来，才是产品本身。</span></p>
+      <span class="eyebrow">05 / <span class="en">Admission</span><span class="zh">准入</span></span>
+      <h2><span class="en">Nine checks. All of them. Or no token.</span><span class="zh">九项检验，全部通过，否则不发通证</span></h2>
+      <p><span class="en">No score, no rating, no "partially ready". Each check is a document that either exists or does not, issued by someone who is not the issuer. A single failure means the asset is unlistable — and saying so is the product.</span>
+      <span class="zh">不打分、不评级、没有“基本就绪”。每一项检验就是一份文件：存在，或不存在；由非发行方出具。一项失败即不可挂牌——而敢说出来，才是产品本身。</span></p>
     </div>
-    <div class="bands">
-      <div class="band red"><div class="rng">&lt;40</div><div class="nm"><span class="en">Red</span><span class="zh">红区</span></div><div class="ds"><span class="en">Unlistable. No token, no disclosure page, no investor materials.</span><span class="zh">不可挂牌。无通证、无披露页、无投资者材料。</span></div></div>
-      <div class="band brz"><div class="rng">40–59</div><div class="nm"><span class="en">Bronze</span><span class="zh">铜级</span></div><div class="ds"><span class="en">Sandbox only. Internal pilot capital, no external solicitation.</span><span class="zh">仅沙盒。自有试点资金，不得对外招揽。</span></div></div>
-      <div class="band slv"><div class="rng">60–79</div><div class="nm"><span class="en">Silver</span><span class="zh">银级</span></div><div class="ds"><span class="en">Qualified investors only, private placement or exemption.</span><span class="zh">仅合格投资者，私募或豁免发行。</span></div></div>
-      <div class="band gld"><div class="rng">80+</div><div class="nm"><span class="en">Gold</span><span class="zh">金级</span></div><div class="ds"><span class="en">Eligible for licensed venue circulation, subject to local law.</span><span class="zh">在持牌场所流转，仍受当地法律约束。</span></div></div>
+    <div class="g3">
+      <div class="card flat"><h4>01 · <span class="en">Title</span><span class="zh">权属</span></h4><p class="small"><span class="en">Ownership documents, registration and unbroken batch lineage.</span><span class="zh">权属凭证、登记记录、不断裂的批次血缘。</span></p></div>
+      <div class="card flat"><h4>02 · <span class="en">Custody</span><span class="zh">独立托管</span></h4><p class="small"><span class="en">Licensed third party, segregated account, monthly reconciliation.</span><span class="zh">持牌第三方、独立账户、月度对账。</span></p></div>
+      <div class="card flat"><h4>03 · <span class="en">Insurance</span><span class="zh">保险</span></h4><p class="small"><span class="en">Policy naming the asset, loss payee is the SPV.</span><span class="zh">保单载明标的，赔款受益人为 SPV。</span></p></div>
+      <div class="card flat"><h4>04 · <span class="en">Inspection</span><span class="zh">质检核查</span></h4><p class="small"><span class="en">Independent sampling, with re-inspection built in.</span><span class="zh">独立抽样，并内置复检机制。</span></p></div>
+      <div class="card flat"><h4>05 · <span class="en">Legal opinion</span><span class="zh">法律定性</span></h4><p class="small"><span class="en">Written view from licensed counsel, plus licence or exemption.</span><span class="zh">持牌律师书面意见，附牌照或豁免。</span></p></div>
+      <div class="card flat"><h4>06 · <span class="en">Segregated cash</span><span class="zh">资金隔离</span></h4><p class="small"><span class="en">Bank account under trustee control, waterfall published.</span><span class="zh">受托人控制下的银行账户，清偿顺序已公布。</span></p></div>
+      <div class="card flat"><h4>07 · <span class="en">Audit</span><span class="zh">审计</span></h4><p class="small"><span class="en">External opinion on the vehicle, engaged by the vehicle.</span><span class="zh">针对该载体的外部审计，由载体自行聘请。</span></p></div>
+      <div class="card flat"><h4>08 · <span class="en">Disclosure</span><span class="zh">披露机制</span></h4><p class="small"><span class="en">Quarterly report, 24-hour incident notice, version log.</span><span class="zh">季度报告、24 小时事件公告、版本记录。</span></p></div>
+      <div class="card flat"><h4>09 · <span class="en">Wind-down</span><span class="zh">处置预案</span></h4><p class="small"><span class="en">Disposal path and waterfall agreed before subscription.</span><span class="zh">认购前已约定处置路径与清偿顺序。</span></p></div>
     </div>
+    <p class="tbl-note"><span class="en">One failed check = no listing, no investor materials, no whitelist entry. There is no conditional pass and no "to be provided later".</span>
+    <span class="zh">一项失败＝不挂牌、不出投资者材料、不进白名单。没有附条件通过，也没有“后续补交”。</span></p>
     <div class="hero-actions" style="margin-top:26px">
-      <a class="btn" href="pcx.html"><span class="en">Full rubric, worked example, disclosure ledger</span><span class="zh">完整评分细则、算例、披露账本</span><span class="ar">→</span></a>
+      <a class="btn" href="trust.html"><span class="en">The checks in full, plus the disclosure ledger</span><span class="zh">完整检验标准与披露账本</span><span class="ar">→</span></a>
     </div>
   </div>
 </section>
@@ -306,15 +313,15 @@
           <th>#</th>
           <th><span class="en">Asset class</span><span class="zh">资产类别</span></th>
           <th><span class="en">Preliminary legal character</span><span class="zh">初步法律定性</span></th>
-          <th><span class="en">Gate</span><span class="zh">闸门</span></th>
+          <th><span class="en">Admission</span><span class="zh">准入条件</span></th>
         </tr></thead>
         <tbody>
-          <tr><td class="mono">01</td><td><span class="en">Warehouse receipt</span><span class="zh">咖啡仓单</span></td><td><span class="en">Document of title / contractual custody claim</span><span class="zh">所有权凭证 / 合同托管请求权</span></td><td class="mono">PCX ≥ 60</td></tr>
-          <tr><td class="mono">02</td><td><span class="en">Carbon removal</span><span class="zh">碳移除量</span></td><td><span class="en">Environmental attribute; commodity-like if retired, not sold as yield</span><span class="zh">环境属性；若用于注销则近似商品，不得作为收益权出售</span></td><td class="mono">PCX ≥ 65</td></tr>
-          <tr><td class="mono">03</td><td><span class="en">Grow pod / store equipment</span><span class="zh">种植舱 / 门店设备</span></td><td><span class="en">Movable property + lease receivable</span><span class="zh">动产 + 租赁应收</span></td><td class="mono">PCX ≥ 60</td></tr>
-          <tr><td class="mono">04</td><td><span class="en">Recipe &amp; IP royalty</span><span class="zh">配方与 IP 版税</span></td><td><span class="en">Licence contract; royalty interest may be a security</span><span class="zh">许可合同；版税收益权可能构成证券</span></td><td class="mono">PCX ≥ 70</td></tr>
-          <tr><td class="mono">05</td><td><span class="en">Store / mall cash flow</span><span class="zh">门店 / 商场现金流</span></td><td><span class="en">Likely a security or collective investment</span><span class="zh">很可能构成证券或集合投资</span></td><td class="mono">PCX ≥ 80 + licence</td></tr>
-          <tr><td class="mono">06</td><td><span class="en">REIT units</span><span class="zh">REITs 份额</span></td><td><span class="en">Regulated collective investment scheme</span><span class="zh">受监管的集体投资计划</span></td><td class="mono">PCX ≥ 85 + licence</td></tr>
+          <tr><td class="mono">01</td><td><span class="en">Warehouse receipt</span><span class="zh">咖啡仓单</span></td><td><span class="en">Document of title / contractual custody claim</span><span class="zh">所有权凭证 / 合同托管请求权</span></td><td>9/9 + <span class="en">bank pledge</span><span class="zh">银行质押协议</span></td></tr>
+          <tr><td class="mono">02</td><td><span class="en">Carbon removal</span><span class="zh">碳移除量</span></td><td><span class="en">Environmental attribute; commodity-like if retired, not sold as yield</span><span class="zh">环境属性；若用于注销则近似商品，不得作为收益权出售</span></td><td>9/9 + <span class="en">methodology review</span><span class="zh">方法学核查</span></td></tr>
+          <tr><td class="mono">03</td><td><span class="en">Grow pod / store equipment</span><span class="zh">种植舱 / 门店设备</span></td><td><span class="en">Movable property + lease receivable</span><span class="zh">动产 + 租赁应收</span></td><td>9/9 + <span class="en">bank pledge</span><span class="zh">银行质押协议</span></td></tr>
+          <tr><td class="mono">04</td><td><span class="en">Recipe &amp; IP royalty</span><span class="zh">配方与 IP 版税</span></td><td><span class="en">Licence contract; royalty interest may be a security</span><span class="zh">许可合同；版税收益权可能构成证券</span></td><td>9/9 + <span class="en">royalty audit</span><span class="zh">版税流水审计</span></td></tr>
+          <tr><td class="mono">05</td><td><span class="en">Store / mall cash flow</span><span class="zh">门店 / 商场现金流</span></td><td><span class="en">Likely a security or collective investment</span><span class="zh">很可能构成证券或集合投资</span></td><td>9/9 + <span class="en">licence</span><span class="zh">牌照</span></td></tr>
+          <tr><td class="mono">06</td><td><span class="en">REIT units</span><span class="zh">REITs 份额</span></td><td><span class="en">Regulated collective investment scheme</span><span class="zh">受监管的集体投资计划</span></td><td>9/9 + <span class="en">licence + REIT rules</span><span class="zh">牌照 + REITs 规则</span></td></tr>
         </tbody>
       </table>
     </div>

@@ -3,7 +3,7 @@
   var NAV = [
     ['index.html',    'Concept',  '商业概念'],
     ['structure.html','Structure','公司结构'],
-    ['pcx.html',      'PCX 40',   'PCX 40'],
+    ['trust.html',    'Trust',    '信任机制'],
     ['assets.html',   'Assets',   '资产阶梯'],
     ['roadmap.html',  'Roadmap',  '路线图']
   ];
@@ -18,8 +18,7 @@
     return '' +
       '<header class="site"><div class="bar">' +
         '<a class="brand" href="index.html" aria-label="JEBI Trust">' +
-          '<img src="assets/img/logo.svg" alt="JEBI Trust">' +
-          '<span class="pcx-pill">PCX 40</span>' +
+          '<img src="assets/img/logo.svg" alt="JEBI Trust" width="264" height="64">' +
         '</a>' +
         '<nav class="main" id="nav">' + links + '</nav>' +
         '<div class="tools">' +
@@ -38,8 +37,8 @@
       '<div class="foot-top">' +
         '<div class="foot-brand">' +
           '<img src="assets/img/logo.svg" alt="JEBI Trust">' +
-          '<p class="small"><span class="en">Trust infrastructure for the coffee chain. Three codes, one ledger, one listing floor.</span>' +
-          '<span class="zh">咖啡产业链的信任基础设施。三码一体、一本账、一个上链门槛。</span></p>' +
+          '<p class="small"><span class="en">Trust infrastructure for the coffee chain. Three codes, one ledger, one admission test.</span>' +
+          '<span class="zh">咖啡产业链的信任基础设施。三码一体、一本账、一套准入检验。</span></p>' +
         '</div>' +
         '<div class="foot-col"><h5><span class="en">Model</span><span class="zh">模式</span></h5>' +
           '<a href="index.html"><span class="en">Thesis</span><span class="zh">核心论点</span></a>' +
@@ -47,9 +46,9 @@
           '<a href="assets.html"><span class="en">Asset ladder</span><span class="zh">资产阶梯</span></a>' +
         '</div>' +
         '<div class="foot-col"><h5><span class="en">Trust</span><span class="zh">信任</span></h5>' +
-          '<a href="pcx.html"><span class="en">PCX 40 index</span><span class="zh">PCX 40 指数</span></a>' +
-          '<a href="pcx.html#bands"><span class="en">Bands &amp; gates</span><span class="zh">分级与闸门</span></a>' +
-          '<a href="pcx.html#ledger"><span class="en">Disclosure ledger</span><span class="zh">披露账本</span></a>' +
+          '<a href="trust.html#admission"><span class="en">Admission test</span><span class="zh">准入九检</span></a>' +
+          '<a href="trust.html#access"><span class="en">Access tiers</span><span class="zh">准入分层</span></a>' +
+          '<a href="trust.html#ledger"><span class="en">Disclosure ledger</span><span class="zh">披露账本</span></a>' +
         '</div>' +
         '<div class="foot-col"><h5><span class="en">Company</span><span class="zh">公司</span></h5>' +
           '<a href="structure.html"><span class="en">Entity map</span><span class="zh">主体图谱</span></a>' +
@@ -63,7 +62,7 @@
       '</p>' +
       '<div class="foot-bottom">' +
         '<span class="small">© 2026 JEBI Trust · <span class="en">Hong Kong, China</span><span class="zh">中国香港</span></span>' +
-        '<span class="small">PCX 40 · <span class="en">FLOOR, NOT TARGET</span><span class="zh">门槛，不是目标</span></span>' +
+        '<span class="small"><span class="en">ALL NINE CHECKS · OR NO LISTING</span><span class="zh">九检全过 · 否则不挂牌</span></span>' +
       '</div>' +
     '</div></footer>';
   }
