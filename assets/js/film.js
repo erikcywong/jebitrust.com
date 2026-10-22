@@ -1,8 +1,19 @@
-/* Film player — index.html only. Chapter times mirror _video/film.html scene starts. */
+/* Film player — index.html only.
+   Chapter times mirror _video/film.html scene starts (identical for both languages). */
 (function () {
   var player = document.querySelector('.player');
   var v = document.getElementById('filmvideo');
   if (!player || !v) return;
+
+  var SRC = {
+    en: 'assets/video/jebi-data-engine.mp4',
+    zh: 'assets/video/jebi-data-engine.zh.mp4'
+  };
+  var POSTER = {
+    en: 'assets/video/poster.jpg',
+    zh: 'assets/video/poster-zh.jpg'
+  };
+  var lang = document.documentElement.getAttribute('data-lang') === 'zh' ? 'zh' : 'en';
 
   var cover = player.querySelector('.cover');
   var chaps = [].slice.call(document.querySelectorAll('.chap'));
@@ -52,5 +63,29 @@
   });
   v.addEventListener('seeking', function () {
     chaps.forEach(function (c) { c.classList.remove('on'); });
+  });
+
+  // Language switch: swap video source + poster. If mid-playback, resume at the
+  // same timestamp — both cuts share one timeline.
+  function applyLang(next) {
+    if (next === lang || !SRC[next]) return;
+    lang = next;
+    var wasT = v.currentTime || 0;
+    var wasPlaying = !v.paused && !v.ended;
+    v.src = SRC[lang];
+    v.setAttribute('poster', POSTER[lang]);
+    if (wasT > 0) {
+      var resume = function () {
+        v.removeEventListener('loadedmetadata', resume);
+        try { v.currentTime = Math.min(wasT, v.duration || wasT); } catch (e) {}
+        if (wasPlaying) play();
+      };
+      v.addEventListener('loadedmetadata', resume);
+    }
+    v.load();
+    if (!wasPlaying) player.classList.remove('playing');
+  }
+  window.addEventListener('langchange', function (e) {
+    applyLang(e && e.detail && e.detail.lang);
   });
 })();
